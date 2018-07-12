@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ZipCoin-RED.iml" filepath="$PROJECT_DIR$/ZipCoin-RED.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ZipCoin-RED.iml" filepath="$PROJECT_DIR$/.idea/ZipCoin-RED.iml" />
     </modules>
   </component>
