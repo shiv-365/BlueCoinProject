@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f54e258d-da71-464b-8271-7897ae55d27f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/block/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/redCoin/blockTest/BlockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ZipCoin-RED.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ZipCoin-RED.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/block/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/block/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/redCoin/blockTest/BlockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/redCoin/blockTest/BlockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/block/Block.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/block/Block.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/redCoin/blockTest/BlockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/redCoin/blockTest/BlockTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,14 +20,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48377863">
+    <splitter split-orientation="horizontal" split-proportion="0.5054054">
       <split-first>
         <leaf>
           <file leaf-file-name="Block.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/block/Block.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="795">
-                  <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+                <state relative-caret-position="454">
+                  <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -44,8 +42,8 @@
           <file leaf-file-name="BlockTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/redCoin/blockTest/BlockTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="900">
-                  <caret line="60" column="44" lean-forward="true" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+                <state relative-caret-position="514">
+                  <caret line="47" column="93" selection-start-line="47" selection-start-column="93" selection-end-line="47" selection-end-column="93" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -83,6 +81,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand />
@@ -93,9 +98,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="713" />
+    <option name="x" value="-313" />
+    <option name="y" value="-1048" />
+    <option name="width" value="1811" />
+    <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -213,7 +219,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BlockTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -231,6 +237,29 @@
       <option name="MAIN_CLASS_NAME" value="redCoin.blockTest.BlockTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="BlockTest.constructBlockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZipCoin-RED" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="redCoin.blockTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="redCoin.blockTest" />
+      <option name="MAIN_CLASS_NAME" value="redCoin.blockTest.BlockTest" />
+      <option name="METHOD_NAME" value="constructBlockTest" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -278,9 +307,14 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.BlockTest" />
+      <item itemvalue="JUnit.BlockTest.constructBlockTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BlockTest" />
+        <item itemvalue="JUnit.BlockTest.constructBlockTest" />
       </list>
     </recent_temporary>
   </component>
@@ -300,48 +334,60 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BlockTest - 2018.07.12 at 17h 07m 55s.xml">
+    <history-entry file="BlockTest - 2018.07.12 at 19h 21m 39s.xml">
       <configuration name="BlockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlockTest - 2018.07.12 at 17h 09m 54s.xml">
+    <history-entry file="BlockTest - 2018.07.12 at 19h 35m 44s.xml">
       <configuration name="BlockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlockTest - 2018.07.12 at 17h 13m 36s.xml">
+    <history-entry file="BlockTest_constructBlockTest - 2018.07.13 at 05h 58m 58s.xml">
+      <configuration name="BlockTest.constructBlockTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlockTest - 2018.07.13 at 05h 59m 05s.xml">
       <configuration name="BlockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlockTest - 2018.07.12 at 17h 14m 37s.xml">
+    <history-entry file="BlockTest - 2018.07.13 at 06h 01m 14s.xml">
       <configuration name="BlockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlockTest - 2018.07.12 at 17h 15m 29s.xml">
+    <history-entry file="BlockTest - 2018.07.13 at 06h 02m 03s.xml">
       <configuration name="BlockTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlockTest - 2018.07.12 at 17h 16m 22s.xml">
+    <history-entry file="BlockTest - 2018.07.13 at 06h 03m 14s.xml">
+      <configuration name="BlockTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlockTest - 2018.07.13 at 06h 03m 54s.xml">
+      <configuration name="BlockTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlockTest - 2018.07.13 at 06h 06m 38s.xml">
+      <configuration name="BlockTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlockTest - 2018.07.13 at 06h 06m 58s.xml">
       <configuration name="BlockTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6434000" />
+    <option name="totallyTimeSpent" value="9634000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="713" extended-state="0" />
+    <frame x="-313" y="-1048" width="1811" height="988" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.3409091" />
+      <window_info anchor="bottom" id="Messages" weight="0.34006733" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3286385" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32956383" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32954547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2278339" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286385" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10339257" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07235727" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -414,8 +460,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/block/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -425,17 +475,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/block/Transaction.java">
+    <entry file="jar://$PROJECT_DIR$/lib/spring-core-4.3.18.RELEASE.jar!/org/springframework/util/DigestUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="-1199">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/redCoin/blockTest/BlockTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="44" lean-forward="true" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+        <state relative-caret-position="514">
+          <caret line="47" column="93" selection-start-line="47" selection-start-column="93" selection-end-line="47" selection-end-column="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -444,8 +501,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/block/Block.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+        <state relative-caret-position="454">
+          <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

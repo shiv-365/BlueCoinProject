@@ -1,5 +1,6 @@
 package block;
 
+import org.apache.commons.codec.digest.DigestUtils;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -15,7 +16,7 @@ public class Block {
         this.blockNumber = blockNumber;
         this.previousHash = previousHash;
         transactionList = new LinkedList<Transaction>();
-        nonce = 1;
+        nonce = 0;
     }
 
     public Integer getBlockNumber() {
@@ -31,18 +32,21 @@ public class Block {
     }
 
     public void iterateNonce() {
-        nonce ++;
+        this.nonce ++;
     }
 
     public Integer getNonce() {
         return nonce;
     }
 
-    public void updateCurrentHash() {
-
+    private void updateCurrentHash() {
+        String transactionListString = transactionList.toString().replace("[","").replace("]","");
+        String text = (blockNumber.toString() + nonce.toString() + transactionListString + previousHash);
+        currentHash = DigestUtils.sha256Hex(text).toUpperCase();
     }
 
     public String getCurrentHash() {
+        updateCurrentHash();
         return currentHash;
     }
 
@@ -51,6 +55,9 @@ public class Block {
     }
 
     public List<Transaction> getTransactions() {
+        if(transactionList.size()==0){
+            return null;
+        }
         return transactionList;
     }
 }

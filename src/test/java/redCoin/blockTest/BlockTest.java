@@ -45,8 +45,7 @@ public class BlockTest {
     @Test
     public void updateGetCurrentHashTest(){
         Block block = new Block(1, "1@a!23jk");
-        String expected = "FF86A94CDA5B17B79A755433D51F50195E4962AE43A59CFDFFBA08E479986DAD";
-        block.updateCurrentHash();
+        String expected = "A37ABD589F829326C5F56D42CFA4C7EC307D99FF2264FE1322A7431B6637338A";
         String actual = block.getCurrentHash();
         assertEquals(expected,actual);
     }
