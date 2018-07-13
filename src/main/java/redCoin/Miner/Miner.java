@@ -1,8 +1,10 @@
 package redCoin.Miner;
 
+import jdk.nashorn.internal.ir.Block;
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class Miner {
+
 
     private Integer nonce = 0;
 
@@ -23,19 +25,19 @@ public class Miner {
         this.nonce = nonce;
     }
 
-//    public void mine(Block block, String data){
-//        boolean hashCodeCheck = false;
-//
-//        while(hashCodeCheck == false){
-//            String newHash = hash(block + previousHash + data);
-//
-//            if(newHash.startsWith("0000")){
-//                hashCodeCheck = true;
-//            } else{
-//            nonce++;
-//
-//            }
-//        }
-//        System.out.println(nonce);
-//    }
+    public void mine(Block block, String data){
+        boolean hashCodeCheck = false;
+
+        while(hashCodeCheck == false){
+            String newHash = hash(block + previousHash + data);
+
+            if(newHash.startsWith("0000")){
+                hashCodeCheck = true;
+            } else{
+            nonce++;
+
+            }
+        }
+        System.out.println(nonce);
+    }
 }
