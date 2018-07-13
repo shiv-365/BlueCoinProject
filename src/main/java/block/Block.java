@@ -19,8 +19,18 @@ public class Block {
         nonce = 0;
     }
 
+    public Block(Integer blockNumber){
+        this.blockNumber = blockNumber;
+        transactionList = new LinkedList<Transaction>();
+        nonce=0;
+    }
+
     public Integer getBlockNumber() {
         return blockNumber;
+    }
+
+    public void setPreviousHash(String previousHash) {
+        this.previousHash = previousHash;
     }
 
     public String getPreviousHash() {
