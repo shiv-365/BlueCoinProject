@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 public class BlockTest {
 
     @Test
-    public void constructBlockTest(){
+    public void constructBlockTest1(){
         Integer expectedBlockNumber = 1;
         String expectedPreviousHash = "1@a!23jk";
         Block block = new Block(expectedBlockNumber, expectedPreviousHash);
@@ -20,6 +20,23 @@ public class BlockTest {
         String actualPreviousHash = block.getPreviousHash();
         assertEquals(expectedBlockNumber,actualBlockNumber);
         assertEquals(expectedPreviousHash, actualPreviousHash);
+    }
+
+    @Test
+    public void constructBlockTest2(){
+        Integer expectedBlockNumber = 1;
+        Block block = new Block(expectedBlockNumber);
+        Integer actualBlockNumber = block.getBlockNumber();
+        assertEquals(expectedBlockNumber,actualBlockNumber);
+    }
+
+    @Test
+    public void setGetPreviousHashTest(){
+        Block block = new Block(1);
+        String expectedPreviousHash = "2$345LKJ3";
+        block.setPreviousHash(expectedPreviousHash);
+        String actualPreviousHash = block.getPreviousHash();
+        assertEquals(expectedPreviousHash,actualPreviousHash);
     }
 
     @Test

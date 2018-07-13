@@ -1,14 +1,14 @@
 package redCoin.Miner;
 
-import jdk.nashorn.internal.ir.Block;
+import block.Block;
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class Miner {
 
+    Block x = new Block(0);
 
-    private Integer nonce = 0;
 
-    public Miner(){
+    public Miner() {
 
     }
 
@@ -17,27 +17,14 @@ public class Miner {
         return hashedString;
     }
 
-    public Integer getNonce() {
-        return nonce;
-    }
-
-    public void setNonce(int nonce) {
-        this.nonce = nonce;
-    }
-
-    public void mine(Block block, String data){
+    public void mine(Block block, String data) {
+        x = block;
         boolean hashCodeCheck = false;
 
-        while(hashCodeCheck == false){
-            String newHash = hash(block + previousHash + data);
-
-            if(newHash.startsWith("0000")){
-                hashCodeCheck = true;
-            } else{
-            nonce++;
-
+        while (hashCodeCheck == false) {
+            if (x.getCurrentHash().startsWith("0000") == false) {
+                x.setNonce(x.getNonce() + 1);
             }
         }
-        System.out.println(nonce);
     }
 }
