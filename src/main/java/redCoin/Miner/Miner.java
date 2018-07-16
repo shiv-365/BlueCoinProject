@@ -5,6 +5,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 public class Miner {
 
+    boolean hashCodeCheck = false;
     Block x = new Block(0);
 
 
@@ -21,9 +22,9 @@ public class Miner {
         return hashedString;
     }
 
-    public void mine(Block block, String data) {
+    public void mine(Block block/* ,  String data    */) {
         x = block;
-        boolean hashCodeCheck = false;
+
 
         while (hashCodeCheck == false) {
             if (x.getCurrentHash().startsWith("0000") == false) {
