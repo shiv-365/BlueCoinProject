@@ -4,26 +4,20 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 public class Miner {
 
-    Block x = new Block(0);
+    boolean hashCodeCheck = false;
 
-
-    public Miner() {
-
-    }
-
-    public String hash(String stringToHash) {
-        String hashedString = DigestUtils.sha256Hex(stringToHash);
-        return hashedString;
-    }
-
-    public void mine(Block block, String data) {
-        x = block;
-        boolean hashCodeCheck = false;
-
+    public void mine(Block block) {
         while (hashCodeCheck == false) {
-            if (x.getCurrentHash().startsWith("0000") == false) {
-                x.setNonce(x.getNonce() + 1);
+            if (block.getCurrentHash().startsWith("0000") == false) {
+                block.iterateNonce();
+            } else {
+                hashCodeCheck = true;
             }
         }
     }
+
+    public void setHashCodeCheck(boolean hashCodeCheck) {
+        this.hashCodeCheck = hashCodeCheck;
+    }
+
 }
