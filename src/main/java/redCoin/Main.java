@@ -34,7 +34,7 @@ public class Main {
         while(hashCodeCheck == false){
             String newHash = hash(block + previousHash + data + nonce.toString());
             System.out.println(newHash);
-            if(newHash.startsWith("000000000")){
+            if(newHash.startsWith("000012f")){
 
                 hashCodeCheck = true;
             } else{

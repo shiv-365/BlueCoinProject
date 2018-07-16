@@ -4,6 +4,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
+
 public class testMain {
 
     @Test
@@ -27,6 +28,7 @@ public class testMain {
 
 
     }
+
 
 
 }
