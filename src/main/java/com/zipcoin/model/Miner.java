@@ -1,7 +1,5 @@
 package com.zipcoin.model;
 
-import org.apache.commons.codec.digest.DigestUtils;
-
 public class Miner {
 
     boolean hashCodeCheck = false;

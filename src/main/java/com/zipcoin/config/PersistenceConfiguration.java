@@ -1,4 +1,4 @@
-package com.zipcoin.config;
+package com.boot.config;
 
 import org.springframework.boot.autoconfigure.flyway.FlywayDataSource;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;

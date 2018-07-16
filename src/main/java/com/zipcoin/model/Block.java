@@ -9,13 +9,23 @@ public class Block {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "BLOCK_ID")
     private Long id;
     private Integer blockNumber;
     private String previousHash;
     private Integer nonce;
     private String currentHash;
-    String transactionList;
+    private String transactionList;
+
+    public Block(){ }
+
+    public Block(Long id, Integer blockNumber, String previousHash, Integer nonce, String currentHash, String transactionList){
+        this.id = id;
+        this.blockNumber = blockNumber;
+        this.previousHash = previousHash;
+        this.nonce = nonce;
+        this.currentHash = currentHash;
+        this.transactionList = transactionList;
+    }
 
     public Block(Integer blockNumber, String previousHash){
         this.blockNumber = blockNumber;
@@ -28,6 +38,10 @@ public class Block {
         this.blockNumber = blockNumber;
         transactionList = "";
         nonce=0;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Long getId() {
@@ -62,16 +76,20 @@ public class Block {
         return nonce;
     }
 
-    private void updateCurrentHash() {
-//        String transactionListString = transactionList.replace("[","").replace("]","");
-//        String text = (blockNumber.toString() + nonce.toString() + transactionListString + previousHash);
-        String text = (blockNumber.toString() + nonce.toString() + transactionList + previousHash);
-        currentHash = DigestUtils.sha256Hex(text).toUpperCase();
+    public void setCurrentHash(String currentHash) {
+        this.currentHash = currentHash;
     }
 
     public String getCurrentHash() {
         updateCurrentHash();
         return currentHash;
+    }
+
+    private void updateCurrentHash() {
+//        String transactionListString = transactionList.replace("[","").replace("]","");
+//        String text = (blockNumber.toString() + nonce.toString() + transactionListString + previousHash);
+        String text = (blockNumber.toString() + nonce.toString() + transactionList + previousHash);
+        currentHash = DigestUtils.sha256Hex(text).toUpperCase();
     }
 
     public String getTransactionList() {
@@ -80,6 +98,10 @@ public class Block {
 
     public void setTransactionList(String transactionList) {
         this.transactionList = transactionList;
+    }
+
+    public void addTransaction(String transaction){
+        transactionList += transaction;
     }
 
     //    public void addTransaction(Transaction transaction) {
