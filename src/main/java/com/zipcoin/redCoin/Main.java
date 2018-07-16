@@ -1,4 +1,4 @@
-package redCoin;
+package com.zipcoin.redCoin;
 
 public class Main {
 

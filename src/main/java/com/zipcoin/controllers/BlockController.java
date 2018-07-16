@@ -1,10 +1,9 @@
-package controllers;
+package com.zipcoin.controllers;
 
-import block.Block;
-import org.springframework.beans.BeanUtils;
+import com.zipcoin.block.Block;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import repository.BlockRepository;
+import com.zipcoin.repository.BlockRepository;
 
 @RestController
 public class BlockController {

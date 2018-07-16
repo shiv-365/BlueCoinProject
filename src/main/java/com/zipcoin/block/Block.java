@@ -1,4 +1,4 @@
-package block;
+package com.zipcoin.block;
 
 import org.apache.commons.codec.digest.DigestUtils;
 

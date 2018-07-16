@@ -1,7 +1,7 @@
-package redCoin.blockTest;
+package com.zipcoin.redCoin.blockTest;
 
-import block.Block;
-import block.Transaction;
+import com.zipcoin.block.Block;
+import com.zipcoin.block.Transaction;
 import org.junit.Test;
 
 import java.util.List;
