@@ -1,11 +1,18 @@
 package block;
 
 import org.apache.commons.codec.digest.DigestUtils;
+
+import javax.persistence.*;
 import java.util.LinkedList;
 import java.util.List;
 
+@Entity
 public class Block {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "BLOCK_ID")
+    private Long id;
     private Integer blockNumber;
     private String previousHash;
     private Integer nonce;
