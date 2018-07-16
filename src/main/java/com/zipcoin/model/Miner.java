@@ -16,14 +16,14 @@ public class Miner {
         return hashedString;
     }
 
-//    public void mine(Block block, String data) {
-//        x = block;
-//        boolean hashCodeCheck = false;
-//
-//        while (hashCodeCheck == false) {
-//            if (x.getCurrentHash().startsWith("0000") == false) {
-//                x.setNonce(x.getNonce() + 1);
-//            }
-//        }
-//    }
+    public void mine(Block block, String data) {
+        x = block;
+        boolean hashCodeCheck = false;
+
+        while (hashCodeCheck == false) {
+            if (x.getCurrentHash().startsWith("0000") == false) {
+                x.setNonce(x.getNonce() + 1);
+            }
+        }
+    }
 }

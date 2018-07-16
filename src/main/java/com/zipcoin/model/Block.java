@@ -3,8 +3,6 @@ package com.zipcoin.model;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import javax.persistence.*;
-import java.util.LinkedList;
-import java.util.List;
 
 @Entity
 public class Block {
@@ -17,19 +15,27 @@ public class Block {
     private String previousHash;
     private Integer nonce;
     private String currentHash;
-//    private List<Transaction> transactionList;
+    String transactionList;
 
     public Block(Integer blockNumber, String previousHash){
         this.blockNumber = blockNumber;
         this.previousHash = previousHash;
-//        transactionList = new LinkedList<Transaction>();
+        transactionList = "";
         nonce = 0;
     }
 
     public Block(Integer blockNumber){
         this.blockNumber = blockNumber;
-//        transactionList = new LinkedList<Transaction>();
+        transactionList = "";
         nonce=0;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setBlockNumber(Integer blockNumber) {
+        this.blockNumber = blockNumber;
     }
 
     public Integer getBlockNumber() {
@@ -56,18 +62,27 @@ public class Block {
         return nonce;
     }
 
-//    private void updateCurrentHash() {
-//        String transactionListString = transactionList.toString().replace("[","").replace("]","");
+    private void updateCurrentHash() {
+//        String transactionListString = transactionList.replace("[","").replace("]","");
 //        String text = (blockNumber.toString() + nonce.toString() + transactionListString + previousHash);
-//        currentHash = DigestUtils.sha256Hex(text).toUpperCase();
-//    }
-//
-//    public String getCurrentHash() {
-//        updateCurrentHash();
-//        return currentHash;
-//    }
-//
-//    public void addTransaction(Transaction transaction) {
+        String text = (blockNumber.toString() + nonce.toString() + transactionList + previousHash);
+        currentHash = DigestUtils.sha256Hex(text).toUpperCase();
+    }
+
+    public String getCurrentHash() {
+        updateCurrentHash();
+        return currentHash;
+    }
+
+    public String getTransactionList() {
+        return transactionList;
+    }
+
+    public void setTransactionList(String transactionList) {
+        this.transactionList = transactionList;
+    }
+
+    //    public void addTransaction(Transaction transaction) {
 //        transactionList.add(transaction);
 //    }
 //
