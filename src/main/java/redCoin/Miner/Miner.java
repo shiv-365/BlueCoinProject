@@ -12,6 +12,10 @@ public class Miner {
 
     }
 
+    public static void main(String[] args) {
+
+    }
+
     public String hash(String stringToHash) {
         String hashedString = DigestUtils.sha256Hex(stringToHash);
         return hashedString;
