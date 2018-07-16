@@ -1,0 +1,29 @@
+package com.zipcoin.model;
+
+import org.apache.commons.codec.digest.DigestUtils;
+
+public class Miner {
+
+    Block x = new Block(0);
+
+
+    public Miner() {
+
+    }
+
+    public String hash(String stringToHash) {
+        String hashedString = DigestUtils.sha256Hex(stringToHash);
+        return hashedString;
+    }
+
+//    public void mine(Block block, String data) {
+//        x = block;
+//        boolean hashCodeCheck = false;
+//
+//        while (hashCodeCheck == false) {
+//            if (x.getCurrentHash().startsWith("0000") == false) {
+//                x.setNonce(x.getNonce() + 1);
+//            }
+//        }
+//    }
+}
