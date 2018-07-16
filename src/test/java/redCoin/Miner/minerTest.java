@@ -11,46 +11,27 @@ public class minerTest {
 //    //Block block = new Block();
 //    Miner miner = new Miner();
 //
+
 //    @Test
-//    public void testGetSetNonce(){
+//    public void testMine_When_HashcodeCheck_Is_False(){
 //
-//        miner.setNonce(0);
-//        Integer actual = miner.getNonce();
-//        Integer expected = 0;
+//        miner.hashCodeCheck = false;
+//        int x = block.getNonce();
+//        miner.mine(block);
+//        int y = block.getNonce();
 //
-//        Assert.assertEquals(expected, actual);
+//        Assert.assertTrue(y > x);
 //    }
 //
 //    @Test
-//    public void hash(){
-//        Miner mine = new Miner();
-//        String stringToHash = "this is a test hash";
-//        String expected = DigestUtils.sha256Hex(stringToHash);
-//        String actual = mine.hash(stringToHash);
-//        Assert.assertEquals(expected,actual);
+//    public void testMine_When_HashcodeCheck_Is_True(){
+//
+//        miner.hashCodeCheck = true;
+//        int x = block.getNonce();
+//        miner.mine(block);
+//        int y = block.getNonce();
+//
+//        Assert.assertTrue(y == x);
 //    }
-//
-//    @Test
-//    public void testCompare_Hash_False(){
-//        miner.setNonce(0);
-//
-//        String actual = miner.hash("FedEx867 is great!");
-//
-//        Assert.assertFalse(miner.hash(miner.getNonce().toString()).startsWith("0000"));
-//    }
-//
-//    @Test
-//    public void testCompare_Hash_True(){
-//        miner.setNonce(0);
-//
-//        String actual = miner.hash("FedEx867 is great!");
-//
-//        Assert.assertTrue(miner.hash(miner.getNonce().toString()).startsWith("0000"));
-//    }
-//
-//    @Test
-//    public void testMine(){
-//
-//    }
-//
+
 }
