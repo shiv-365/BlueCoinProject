@@ -2,32 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f54e258d-da71-464b-8271-7897ae55d27f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_flywaydb_flyway_core_3_2_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZipCoin-RED.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ZipCoin-RED.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcoin/config/PersistenceConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcoin/config/PersistenceConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcoin/controllers/BlockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcoin/controller/BlockController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcoin/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcoin/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcoin/model/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcoin/model/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcoin/controller/BlockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcoin/controller/BlockController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcoin/model/Miner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcoin/model/Miner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcoin/model/Transaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcoin/repository/BlockRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcoin/repository/BlockRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/redCoin/Miner/Miner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.migration/V2__create_block.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__create_block.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/block/test/BlockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/block/test/BlockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zipcoin/config/PersistenceConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zipcoin/controllers/BlockController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zipcoin/controllers/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zipcoin/model/Block.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zipcoin/model/Block.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/redCoin/Miner/minerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zipcoin/controller/BlockController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zipcoin/controller/BlockController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zipcoin/model/Miner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zipcoin/model/Miner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zipcoin/model/Transaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zipcoin/repository/BlockRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zipcoin/repository/BlockRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db.migration/V2__create_block.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redCoin/Miner/Miner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zipcoin/redCoin/block/test/BlockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zipcoin/redCoin/block/test/BlockTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zipcoin/redCoin/miner/test/minerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zipcoin/redCoin/miner/test/minerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/redCoin/Miner/minerTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,8 +38,8 @@
       <file leaf-file-name="Block.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/model/Block.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1575">
-              <caret line="105" selection-start-line="105" selection-end-line="105" />
+            <state relative-caret-position="1230">
+              <caret line="82" column="4" lean-forward="true" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,8 +50,8 @@
       <file leaf-file-name="BlockController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/controller/BlockController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+            <state relative-caret-position="107">
+              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,16 +123,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/model/Miner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersistenceConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/config/PersistenceConfiguration.java">
+      <file leaf-file-name="minerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/miner/test/minerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="180">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,8 +167,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zipcoin/config/PersistenceConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zipcoin/controllers/BlockController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zipcoin/model/Block.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zipcoin/model/Miner.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zipcoin/model/Miner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/redCoin/Miner/minerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zipcoin/controller/BlockController.java" />
       </list>
     </option>
   </component>
@@ -212,11 +196,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-245" />
-    <option name="y" value="-1027" />
-    <option name="width" value="1700" />
-    <option name="height" value="1027" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="67" />
+    <option name="y" value="36" />
+    <option name="width" value="1043" />
+    <option name="height" value="699" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -297,6 +281,23 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redCoin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redCoin" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -326,6 +327,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.zipcoin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/db/migration" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -484,7 +488,7 @@
       <workItem from="1531343033550" duration="411000" />
       <workItem from="1531419813805" duration="2054000" />
       <workItem from="1531772346214" duration="3133000" />
-      <workItem from="1531775595883" duration="2386000" />
+      <workItem from="1531775595883" duration="5563000" />
     </task>
     <servers />
   </component>
@@ -513,12 +517,15 @@
     <history-entry file="java_in_ZipCoin-RED - 2018.07.16 at 17h 00m 23s.xml">
       <configuration name="java in ZipCoin-RED" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="java_in_ZipCoin-RED - 2018.07.16 at 18h 43m 44s.xml">
+      <configuration name="java in ZipCoin-RED" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11083000" />
+    <option name="totallyTimeSpent" value="14260000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-245" y="-1027" width="1700" height="1027" extended-state="0" />
+    <frame x="67" y="36" width="1043" height="699" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -539,10 +546,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15698925" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44186047" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19481303" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3226773" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
@@ -562,7 +569,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/testMain.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/redCoin/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/testMain.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -666,16 +672,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db.migration/mine_block.sql" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/db.migration/V2__mine_block.sql" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/miner/test/minerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/redCoin/Miner/Miner.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/block/test/BlockTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -711,13 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/model/Miner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/repository/BlockRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -738,27 +727,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/model/Block.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V2__create_block.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -769,10 +741,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/model/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="82" column="4" lean-forward="true" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/redCoin/Miner/minerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/model/Miner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/miner/test/minerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/controller/BlockController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        <state relative-caret-position="107">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

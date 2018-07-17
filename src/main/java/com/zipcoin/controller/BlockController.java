@@ -1,6 +1,7 @@
 package com.zipcoin.controller;
 
 import com.zipcoin.model.Block;
+import com.zipcoin.model.Miner;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -41,4 +42,12 @@ public class BlockController {
         return blockToDelete;
     }
 
+    //MINE
+    @RequestMapping(value = "blocks/{id}/mine", method = RequestMethod.GET)
+    public Block mine(@PathVariable Long id){
+        Block blockToMine = blockRepository.findOne(id);
+        Miner miner = new Miner();
+        Block minedBlock = miner.mine(blockToMine);
+        return blockRepository.saveAndFlush(minedBlock);
+    }
 }
