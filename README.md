@@ -28,7 +28,7 @@ The User Interface for the project should start with simple UIs, and refine/embe
 
 Project is to create a way to pay each other “zips” a crypto currency that is worth exactly nothing. Each zipcoin is divided into 10000 ‘tariqs’. A user wallet is built that provides a way for UserA to pay UserB some amount of Zips (or some number of tariqs). Each transaction should contain a “purpose” field (or “description”). Some each transaction is a tuple (date, payer, payee, amount (zips/tariqs) and a purpose).
 
-A server capable of integrating into a community must be built, so that a series of servers can be put up and a blockchain maintained among them. The chain should be kept in a db, and there should be a way to verify that a chain you’re receiving from a neighbor is in fact a correct chain when a machine joins a network. As transactions are added to a block (& the chain), a group consensys should be determined for each block. Which consensys algorithm is used must pre-approved by an instructor.
+A server capable of integrating into a community must be built, so that a series of servers can be put up and a blockchain maintained among them. The chain should be kept in a db, and there should be a way to verify that a chain you’re receiving from a neighbor is in fact a correct chain when a machine joins a network. As transactions are added to a com.zipcoin.model (& the chain), a group consensys should be determined for each com.zipcoin.model. Which consensys algorithm is used must pre-approved by an instructor.
 
 The consensus algorithm can be a mining algorithm for proof of work. Or perhaps, a permissioned chain is a better idea, it is much more likely to be what a student may see the first time they find a blockchain in the wild.
 SO a permissioned chain(?) that uses github_id as the way an address of a wallet gets created.
@@ -36,7 +36,7 @@ Zipcoins are granted based on instructor review of features in the apps
 
 A client ‘wallet’ needs to be created to trade zipcoins. Simple Client UI for starters, refine over sprints.
 
-The start is a simple server REST API that can handle test transactions being added to the chain. Then add the ability to “mine” block based on the transactions being sent around. 
+The start is a simple server REST API that can handle test transactions being added to the chain. Then add the ability to “mine” com.zipcoin.model based on the transactions being sent around. 
 
 There are two APIs that need to be built, one for client to chain interaction (for the posting of transactions and the receiving of zips then paid) and two, for the server to server chain protocol.
 
