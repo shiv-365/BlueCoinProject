@@ -70,12 +70,11 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      ZipCoin BlockChain\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  \n  <div class="well well-success col-xs-7" id="blockchain">\n       <div class="list list-inset">\n          <label class="item item-input"> Block #:<input type="text" disabled placeholder= "{{ block.blockNumber }}" ></label>\n          <label class="item item-input"> Nonce:<input type="text" disabled placeholder= "{{ block.nonce }}" ></label>\n          <label class="item item-input"> Data:<input type="text" disabled placeholder= "{{ block.transactionList }}" > </label>\n          <label class="item item-input"> Hash:<input type="text" disabled placeholder= "{{ block.currentHash }}" ></label>\n    <!-- <label class="item item-input"> HashPrev: <input type="text" disabled placeholder="Hash"></label> -->\n          <button ion-button>Mine</button>\n        </div>\n  </div>   \n\n</ion-content>'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      ZipCoin BlockChain\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  \n  <div class="well well-success col-xs-7" id="blockchain">\n       <div class="list list-inset">\n          <label class="item item-input"> Block #:<input type="text" disabled placeholder= "{{ block.blockNumber }}" ></label>\n          <label class="item item-input"> Nonce:<input type="text" disabled placeholder= "{{ block.nonce }}" ></label>\n          <label class="item item-input"> Data:<input type="text" disabled placeholder= "{{ block.transactionList }}" > </label>\n          <label class="item item-input"> Hash:<input type="text" disabled placeholder= "{{ block.currentHash }}" ></label>\n    <!-- <label class="item item-input"> HashPrev: <input type="text" disabled placeholder="Hash"></label> -->\n          <button ion-button>Mine</button>\n        </div>\n  </div>   \n\n</ion-content>'/*ion-inline-end:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */]])
     ], HomePage);
     return HomePage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -237,7 +236,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
