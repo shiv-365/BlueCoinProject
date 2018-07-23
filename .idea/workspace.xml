@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="9f24b05d-1c76-48c2-869b-48fd3ceea11c" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/JavaServer/target/classes/com/zipcoin/controller/BlockController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaServer/.idea/compiler.xml" afterDir="false" />
@@ -126,6 +127,10 @@
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/JavaServer/target/" />
+=======
+    <list default="true" id="f54e258d-da71-464b-8271-7897ae55d27f" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,21 +138,67 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf />
   </component>
+=======
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/.idea/ZipCoin-RED.iml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/test/java/redCoin/testMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/redCoin/Main.java" />
         <option value="$PROJECT_DIR$/ZipCoin-RED.iml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/redCoin/Main.java" />
+        <option value="$PROJECT_DIR$/src/test/java/redCoin/testMain.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/minerTest/minerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zipcoin/config/PersistenceConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/miner/test/minerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.migration/V2__create_block.sql" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/block/test/BlockTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zipcoin/repository/BlockRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zipcoin/config/PersistenceConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zipcoin/controllers/BlockController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zipcoin/model/Block.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zipcoin/model/Miner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/redCoin/Miner/minerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zipcoin/controller/BlockController.java" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
       </list>
     </option>
   </component>
@@ -173,12 +224,22 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1680" />
     <option name="height" value="970" />
   </component>
   <component name="ProjectLevelVcsManager">
+=======
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-29" />
+    <option name="y" value="38" />
+    <option name="width" value="1280" />
+    <option name="height" value="713" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -186,36 +247,59 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+=======
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+<<<<<<< HEAD
               <item name="JavaServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaServer" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+<<<<<<< HEAD
               <item name="JavaServer" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+<<<<<<< HEAD
               <item name="JavaServer" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+<<<<<<< HEAD
               <item name="JavaServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -230,6 +314,68 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="zipcoin" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zipcoin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zipcoin" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zipcoin" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redCoin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZipCoin-RED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZipCoin-RED" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redCoin" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
             </path>
           </expand>
           <select />
@@ -246,6 +392,24 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
+=======
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.zipcoin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/db/migration" />
+    </key>
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -259,6 +423,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="redCoin.Main" />
@@ -296,22 +461,17 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="redCoin.blockTest" />
       <option name="MAIN_CLASS_NAME" value="redCoin.blockTest.BlockTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+=======
+  <component name="RunManager" selected="Spring Boot.ZipCoinApp">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -323,7 +483,59 @@
       </option>
       <patterns />
     </configuration>
+<<<<<<< HEAD
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+=======
+    <configuration name="java in ZipCoin-RED" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZipCoin-RED" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+<<<<<<< HEAD
+=======
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <patterns />
+    </configuration>
+    <configuration name="minerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZipCoin-RED" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcoin.redCoin.miner.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.zipcoin.redCoin.miner.test" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcoin.redCoin.miner.test.minerTest" />
+      <option name="METHOD_NAME" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+<<<<<<< HEAD
     <configuration name="testMain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="testMain.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
       <module name="ZipCoin-RED" />
       <extension name="coverage">
         <pattern>
@@ -335,8 +547,13 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="redCoin" />
       <option name="MAIN_CLASS_NAME" value="redCoin.testMain" />
+<<<<<<< HEAD
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+=======
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -379,6 +596,7 @@
       <listeners />
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.testMain" />
       <item itemvalue="JUnit.BlockTest" />
@@ -392,6 +610,19 @@
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BlockTest" />
         <item itemvalue="JUnit.testMain" />
+=======
+      <item itemvalue="JUnit.testMain.test" />
+      <item itemvalue="Spring Boot.ZipCoinApp" />
+      <item itemvalue="JUnit.java in ZipCoin-RED" />
+      <item itemvalue="JUnit.minerTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ZipCoinApp" />
+        <item itemvalue="JUnit.java in ZipCoin-RED" />
+        <item itemvalue="JUnit.minerTest" />
+        <item itemvalue="JUnit.testMain.test" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
       </list>
     </recent_temporary>
   </component>
@@ -400,12 +631,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="9f24b05d-1c76-48c2-869b-48fd3ceea11c" name="Default" comment="" />
+=======
+      <changelist id="f54e258d-da71-464b-8271-7897ae55d27f" name="Default" comment="" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
       <created>1531343031636</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531343031636</updated>
       <workItem from="1531343033550" duration="411000" />
+<<<<<<< HEAD
       <workItem from="1531419813805" duration="2355000" />
       <workItem from="1531436993005" duration="5338000" />
       <workItem from="1531509994193" duration="1501000" />
@@ -418,20 +654,77 @@
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="15690000" />
+=======
+      <workItem from="1531419813805" duration="2054000" />
+      <workItem from="1531772346214" duration="3133000" />
+      <workItem from="1531775595883" duration="5604000" />
+      <workItem from="1531837614306" duration="20000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="testMain_test - 2018.07.12 at 16h 28m 57s.xml">
+      <configuration name="testMain.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="java_in_ZipCoin-RED - 2018.07.16 at 16h 44m 25s.xml">
+      <configuration name="java in ZipCoin-RED" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="minerTest - 2018.07.16 at 16h 49m 37s.xml">
+      <configuration name="minerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="java_in_ZipCoin-RED - 2018.07.16 at 16h 50m 59s.xml">
+      <configuration name="java in ZipCoin-RED" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="java_in_ZipCoin-RED - 2018.07.16 at 16h 51m 40s.xml">
+      <configuration name="java in ZipCoin-RED" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="java_in_ZipCoin-RED - 2018.07.16 at 16h 57m 51s.xml">
+      <configuration name="java in ZipCoin-RED" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="java_in_ZipCoin-RED - 2018.07.16 at 16h 59m 51s.xml">
+      <configuration name="java in ZipCoin-RED" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="java_in_ZipCoin-RED - 2018.07.16 at 17h 00m 23s.xml">
+      <configuration name="java in ZipCoin-RED" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="java_in_ZipCoin-RED - 2018.07.16 at 18h 43m 44s.xml">
+      <configuration name="java in ZipCoin-RED" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14388000" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="970" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50076926" side_tool="true" weight="0.3298969" />
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.1929182" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
+=======
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50076926" side_tool="true" weight="0.3298969" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.1929182" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3298969" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49923077" visible="true" weight="0.3298969" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15506716" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -454,6 +747,43 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+=======
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26494345" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info id="Web" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Bean Validation" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19586207" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3298969" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Designer" order="2" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,6 +793,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/test/java/redCoin/testMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -572,6 +903,10 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/redCoin/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/testMain.java" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
     <entry file="file://$PROJECT_DIR$/pom.xml" />
     <entry file="file://$PROJECT_DIR$/src/test/java/redCoin/minerTest.java" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -583,6 +918,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/ZipCoin-RED.iml" />
     <entry file="file://$PROJECT_DIR$/pom.xml" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/redCoin/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -666,10 +1002,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/redCoin/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/testMain.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/redCoin/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/testMain.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/redCoin/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/testMain.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/redCoin/Main.java" />
+    <entry file="file://$PROJECT_DIR$/ZipCoin-RED.iml" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/block/test/BlockControllerTest.java" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="461" column="19" selection-start-line="461" selection-start-column="19" selection-end-line="461" selection-end-column="19" />
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.idea/ZipCoin-RED.iml" />
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -706,5 +1059,139 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/redCoin/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/redCoin/testMain.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/redCoin/minerTest.java" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4617">
+          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/ZipCoin-RED.iml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/redCoin/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/redCoin/testMain.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/redCoin/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/redCoin/testMain.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/redCoin/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/mainTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/testMain.java" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.migration/mine_block.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.migration/V2__mine_block.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/redCoin/Miner/Miner.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/block/test/BlockTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/model/Transaction.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/config/PersistenceConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/controller/HomeController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/repository/BlockRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/ZipCoinApp.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V2__create_block.sql" />
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/model/Block.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/redCoin/Miner/minerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/model/Miner.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcoin/redCoin/miner/test/minerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/controller/BlockController.java" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ZipCoin-RED</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+>>>>>>> a3e38f019b5aa826216e72693185d91438d8fb7d
   </component>
 </project>
