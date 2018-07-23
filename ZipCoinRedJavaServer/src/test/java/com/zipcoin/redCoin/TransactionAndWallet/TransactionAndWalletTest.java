@@ -1,9 +1,8 @@
 package com.zipcoin.redCoin.TransactionAndWallet;
 
 import com.zipcoin.model.Block;
-import com.zipcoin.model.Miner;
-import com.zipcoin.Wallet.Transaction;
-import com.zipcoin.Wallet.Wallet;
+import com.zipcoin.model.Transaction;
+import com.zipcoin.model.Wallet;
 
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -22,7 +21,7 @@ public class TransactionAndWalletTest {
         Wallet walletA = new Wallet();
         Wallet walletB = new Wallet();
         //Test public and private keys
-        System.out.println("Wallet 1");
+        System.out.println("utilities 1");
         System.out.println("private key :wallet 1");
         System.out.println(walletA.getPrivateKey().toString());
         System.out.println("public key :wallet 1");

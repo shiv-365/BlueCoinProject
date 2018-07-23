@@ -1,9 +1,9 @@
-package com.zipcoin.Wallet;
+package com.zipcoin.model;
 
+import com.zipcoin.utilities.StringUtil;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import java.security.*;
-import java.util.ArrayList;
 
 public class Transaction {
     private String transactionId; // this is also the hash of the transaction.

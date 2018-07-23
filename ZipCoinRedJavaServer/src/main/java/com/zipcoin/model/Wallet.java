@@ -1,4 +1,4 @@
-package com.zipcoin.Wallet;
+package com.zipcoin.model;
 
 import java.security.*;
 

@@ -1,4 +1,6 @@
-package com.zipcoin.model;
+package com.zipcoin.utilities;
+
+import com.zipcoin.model.Block;
 
 public class Miner {
 
