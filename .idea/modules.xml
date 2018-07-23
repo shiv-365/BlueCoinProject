@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<component name="ProjectModuleManager">
+  <component name="ProjectModuleManager">
     <modules>
-        <module fileurl="file://$PROJECT_DIR$/ZipCoin-RED.iml" filepath="$PROJECT_DIR$/ZipCoin-RED.iml" />
-
+      <module fileurl="file://$PROJECT_DIR$/JavaServer/ZipCoin-RED.iml" filepath="$PROJECT_DIR$/JavaServer/ZipCoin-RED.iml" />
     </modules>
-</component>
+  </component>
 </project>

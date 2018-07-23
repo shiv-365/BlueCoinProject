@@ -4,7 +4,7 @@ public class Miner {
 
     boolean hashCodeCheck = false;
 
-    public void mine(Block block) {
+    public Block mine(Block block) {
         while (hashCodeCheck == false) {
             if (block.getCurrentHash().startsWith("0000") == false) {
                 block.iterateNonce();
@@ -12,6 +12,7 @@ public class Miner {
                 hashCodeCheck = true;
             }
         }
+        return block;
     }
 
     public void setHashCodeCheck(boolean hashCodeCheck) {
