@@ -29,8 +29,13 @@
       <file leaf-file-name="Block.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/model/Block.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="209">
               <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+=======
+            <state relative-caret-position="1200">
+              <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
+>>>>>>> 232d1d1a1bfb8e6c7686314cbfe52dab7be64e78
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,7 +46,11 @@
       <file leaf-file-name="BlockController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/controller/BlockController.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="529">
+=======
+            <state relative-caret-position="-192">
+>>>>>>> 232d1d1a1bfb8e6c7686314cbfe52dab7be64e78
               <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -187,11 +196,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="67" />
-    <option name="y" value="36" />
-    <option name="width" value="1043" />
-    <option name="height" value="699" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="39" />
+    <option name="y" value="23" />
+    <option name="width" value="1203" />
+    <option name="height" value="713" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -201,9 +210,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Course" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+=======
+      <pane id="Scope" />
+>>>>>>> 232d1d1a1bfb8e6c7686314cbfe52dab7be64e78
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -267,6 +280,10 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="PackagesPane" />
+>>>>>>> 232d1d1a1bfb8e6c7686314cbfe52dab7be64e78
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -452,9 +469,14 @@
       <workItem from="1531419813805" duration="2054000" />
       <workItem from="1531772346214" duration="3133000" />
       <workItem from="1531775595883" duration="5563000" />
+<<<<<<< HEAD
       <workItem from="1531837698674" duration="1652000" />
       <workItem from="1531919430062" duration="82000" />
       <workItem from="1531919540581" duration="3064000" />
+=======
+      <workItem from="1531837698674" duration="1689000" />
+      <workItem from="1531920139324" duration="959000" />
+>>>>>>> 232d1d1a1bfb8e6c7686314cbfe52dab7be64e78
     </task>
     <servers />
   </component>
@@ -488,10 +510,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="19058000" />
+=======
+    <option name="totallyTimeSpent" value="16908000" />
+>>>>>>> 232d1d1a1bfb8e6c7686314cbfe52dab7be64e78
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="39" y="23" width="1203" height="713" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -511,11 +537,19 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.36689654" />
+=======
+>>>>>>> 232d1d1a1bfb8e6c7686314cbfe52dab7be64e78
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4318182" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21405493" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28251508" />
+>>>>>>> 232d1d1a1bfb8e6c7686314cbfe52dab7be64e78
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Learn" order="5" />
@@ -702,6 +736,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="253">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
@@ -711,6 +746,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+=======
+        <state relative-caret-position="1200">
+          <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
+>>>>>>> 232d1d1a1bfb8e6c7686314cbfe52dab7be64e78
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -726,8 +765,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/model/Block.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="209">
           <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+=======
+        <state relative-caret-position="-192">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+>>>>>>> 232d1d1a1bfb8e6c7686314cbfe52dab7be64e78
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

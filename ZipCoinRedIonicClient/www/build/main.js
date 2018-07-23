@@ -59,7 +59,7 @@ var HomePage = /** @class */ (function () {
         this.navCtrl = navCtrl;
         this.blockService = blockService;
         this.block = {};
-        this.id = 2;
+        this.id = 3;
         this.getBlock();
     }
     HomePage.prototype.getBlock = function () {
@@ -68,13 +68,20 @@ var HomePage = /** @class */ (function () {
             _this.block = block;
         });
     };
+    HomePage.prototype.btnClicked = function () {
+        var _this = this;
+        this.blockService.getMinedBlock(this.id).subscribe(function (block) {
+            _this.block = block;
+        });
+    };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      ZipCoin BlockChain\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  \n  <div class="well well-success col-xs-7" id="blockchain">\n       <div class="list list-inset">\n          <label class="item item-input"> Block #:<input type="text" disabled placeholder= "{{ block.blockNumber }}" ></label>\n          <label class="item item-input"> Nonce:<input type="text" disabled placeholder= "{{ block.nonce }}" ></label>\n          <label class="item item-input"> Data:<input type="text" disabled placeholder= "{{ block.transactionList }}" > </label>\n          <label class="item item-input"> Hash:<input type="text" disabled placeholder= "{{ block.currentHash }}" ></label>\n    <!-- <label class="item item-input"> HashPrev: <input type="text" disabled placeholder="Hash"></label> -->\n          <button ion-button>Mine</button>\n        </div>\n  </div>   \n\n</ion-content>'/*ion-inline-end:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      ZipCoin BlockChain\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  \n  <div class="well well-success col-xs-7" id="blockchain">\n       <div class="list list-inset">\n          <label class="item item-input"> Block #:<input type="text" disabled placeholder= "{{ block.blockNumber }}" ></label>\n          <label class="item item-input"> Nonce:<input type="text" disabled placeholder= "{{ block.nonce }}" ></label>\n          <label class="item item-input"> Data:<input type="text" disabled placeholder= "{{ block.transactionList }}" > </label>\n          <label class="item item-input"> Hash:<input type="text" disabled placeholder= "{{ block.currentHash }}" ></label>\n    <!-- <label class="item item-input"> HashPrev: <input type="text" disabled placeholder="Hash"></label> -->\n          <button ion-button (click)="btnClicked()">Mine</button>\n        </div>\n  </div>   \n\n</ion-content>'/*ion-inline-end:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */]) === "function" && _b || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -113,9 +120,10 @@ var BlockService = /** @class */ (function () {
     };
     BlockService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object])
     ], BlockService);
     return BlockService;
+    var _a;
 }());
 
 //# sourceMappingURL=block-service.js.map
