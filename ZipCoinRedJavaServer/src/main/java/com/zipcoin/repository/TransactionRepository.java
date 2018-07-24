@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface TransactionRepository extends JpaRepository<Transaction, Long> {
 
-    @Query("SELECT t FROM transaction t WHERE t.sender = :publicKey OR t.recipient = :publicKey")
-    List<Transaction> findAllTransactionsWithPubKey(@Param("publicKey") String publicKey);
+//    @Query("SELECT t FROM transaction t WHERE t.sender = :publicKey OR t.recipient = :publicKey")
+//    List<Transaction> findAllTransactionsWithPubKey(@Param("publicKey") String publicKey);
 
 }

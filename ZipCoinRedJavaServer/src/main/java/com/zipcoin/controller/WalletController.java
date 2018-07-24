@@ -21,17 +21,17 @@ public class WalletController {
         return walletRepository.saveAndFlush(wallet);
     }
 
-    //READ A WALLET FROM PUBLIC KEY
-    @RequestMapping(value = "wallets/{publicKey}", method = RequestMethod.GET)
-    public Wallet get(@PathVariable String publicKey){
-        return walletRepository.findWalletFromPubKey(publicKey);
-    }
-
-    //READ PUBLIC KEYS FROM ALL WALLETS
-    @RequestMapping(value = "wallets/publicKeys", method = RequestMethod.GET)
-    public List<String> get(){
-        return walletRepository.findAllPublicKeys();
-    }
+//    //READ A WALLET FROM PUBLIC KEY
+//    @RequestMapping(value = "wallets/{publicKey}", method = RequestMethod.GET)
+//    public Wallet get(@PathVariable String publicKey){
+//        return walletRepository.findWalletFromPubKey(publicKey);
+//    }
+//
+//    //READ PUBLIC KEYS FROM ALL WALLETS
+//    @RequestMapping(value = "wallets/publicKeys", method = RequestMethod.GET)
+//    public List<String> get(){
+//        return walletRepository.findAllPublicKeys();
+//    }
 
     //DELETE A WALLET
     @RequestMapping(value = "wallets/{id}", method = RequestMethod.DELETE)
