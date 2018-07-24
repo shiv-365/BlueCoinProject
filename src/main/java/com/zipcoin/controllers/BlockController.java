@@ -8,6 +8,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.zipcoin.repository.BlockRepository;
 
+import java.util.List;
+
 @RestController
 public class BlockController {
 
@@ -21,13 +23,19 @@ public class BlockController {
     }
 
     //READ
-    @RequestMapping(value = "users/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "blocks/{id}", method = RequestMethod.GET)
     public Block get(@PathVariable Long id){
         return blockRepository.findOne(id);
     }
 
+    //READ
+    @RequestMapping(value = "blocks", method = RequestMethod.GET)
+    public List<Block> get(){
+        return blockRepository.findAll();
+    }
+
     //UPDATE
-    @RequestMapping(value = "users/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "blocks/{id}", method = RequestMethod.PUT)
     public Block update(@PathVariable Long id, @RequestBody Block block){
         Block blockToUpdate = blockRepository.findOne(id);
         BeanUtils.copyProperties(block, blockToUpdate);
@@ -35,7 +43,7 @@ public class BlockController {
     }
 
     //DELETE
-    @RequestMapping(value = "users/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "blocks/{id}", method = RequestMethod.DELETE)
     public Block delete(@PathVariable Long id){
         Block blockToDelete = blockRepository.findOne(id);
         blockRepository.delete(blockToDelete);
