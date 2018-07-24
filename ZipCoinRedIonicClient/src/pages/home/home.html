@@ -20,6 +20,7 @@
               <div>Data: {{ block.transactionList }}</div>
               <div>Previous Hash: {{ block.previousHash }}</div>
               <div>Current Hash: {{ block.currentHash }}</div>
+              <button ion-button (click)="getMinedBlock(block.id)">Mine</button>
             </ion-card-content>
         </ion-card>
       </ion-item>

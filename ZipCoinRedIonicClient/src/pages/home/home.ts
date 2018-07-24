@@ -8,14 +8,13 @@ import { BlockService } from '../../providers/block-service'
 export class HomePage {
   private block : any = {};
   private blocks : Array<any>;
-  private id = 3;
   
   constructor(public navCtrl: NavController, public blockService: BlockService) {
       this.getAllBlocks();
     }
 
-  getBlock() {
-    this.blockService.getBlock(this.id).subscribe(block => {
+  getBlock(id) {
+    this.blockService.getBlock(id).subscribe(block => {
       this.block = block;
     })
   }
@@ -24,8 +23,8 @@ export class HomePage {
       this.blocks = blocks;
     })
   }
-  btnClicked() {
-    this.blockService.getMinedBlock(this.id).subscribe(minedBlock => {
+  getMinedBlock(id) {
+    this.blockService.getMinedBlock(id).subscribe(minedBlock => {
       this.block = minedBlock;
   })
   }

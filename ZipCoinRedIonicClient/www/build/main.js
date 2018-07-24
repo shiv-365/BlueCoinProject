@@ -59,12 +59,11 @@ var HomePage = /** @class */ (function () {
         this.navCtrl = navCtrl;
         this.blockService = blockService;
         this.block = {};
-        this.id = 3;
         this.getAllBlocks();
     }
-    HomePage.prototype.getBlock = function () {
+    HomePage.prototype.getBlock = function (id) {
         var _this = this;
-        this.blockService.getBlock(this.id).subscribe(function (block) {
+        this.blockService.getBlock(id).subscribe(function (block) {
             _this.block = block;
         });
     };
@@ -74,20 +73,19 @@ var HomePage = /** @class */ (function () {
             _this.blocks = blocks;
         });
     };
-    HomePage.prototype.btnClicked = function () {
+    HomePage.prototype.getMinedBlock = function (id) {
         var _this = this;
-        this.blockService.getMinedBlock(this.id).subscribe(function (minedBlock) {
+        this.blockService.getMinedBlock(id).subscribe(function (minedBlock) {
             _this.block = minedBlock;
         });
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      ZipCoin BlockChain\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n    <ion-item-sliding *ngFor="let block of blocks">\n      <ion-item>\n        <ion-card>\n            <ion-card-header>\n              Block #: {{block.blockNumber}}\n            </ion-card-header>\n            <ion-card-content>\n              <div>Nonce: {{ block.nonce }}</div>\n              <div>Data: {{ block.transactionList }}</div>\n              <div>Previous Hash: {{ block.previousHash }}</div>\n              <div>Current Hash: {{ block.currentHash }}</div>\n            </ion-card-content>\n        </ion-card>\n      </ion-item>\n    </ion-item-sliding>\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      ZipCoin BlockChain\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n    <ion-item-sliding *ngFor="let block of blocks">\n      <ion-item>\n        <ion-card>\n            <ion-card-header>\n              Block #: {{block.blockNumber}}\n            </ion-card-header>\n            <ion-card-content>\n              <div>Nonce: {{ block.nonce }}</div>\n              <div>Data: {{ block.transactionList }}</div>\n              <div>Previous Hash: {{ block.previousHash }}</div>\n              <div>Current Hash: {{ block.currentHash }}</div>\n              <button ion-button (click)="getMinedBlock(block.id)">Mine</button>\n            </ion-card-content>\n        </ion-card>\n      </ion-item>\n    </ion-item-sliding>\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */]])
     ], HomePage);
     return HomePage;
-    var _a, _b;
 }());
 
 //make payment
