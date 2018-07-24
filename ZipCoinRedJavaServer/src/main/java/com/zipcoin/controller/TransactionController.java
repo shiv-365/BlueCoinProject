@@ -18,7 +18,7 @@ public class TransactionController {
     //CREATE A TRANSACTION
     @RequestMapping(value = "transactions", method = RequestMethod.POST)
     public Transaction create(@RequestBody Transaction transaction){
-        
+        updateBalances();
         return transactionRepository.saveAndFlush(transaction);
     }
 
