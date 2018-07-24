@@ -1,8 +1,8 @@
-package redCoin;
+package com.zipcoin.redCoin.chain.test;
 
 import com.zipcoin.model.Block;
 import com.zipcoin.model.Chain;
-import com.zipcoin.model.Miner;
+import com.zipcoin.utilities.Miner;
 import org.junit.Assert;
 import org.junit.Test;
 
