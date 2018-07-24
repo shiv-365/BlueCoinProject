@@ -1,7 +1,8 @@
-package com.zipcoin.redCoin.miner.test;
+package redCoin.Miner;
 
 import com.zipcoin.model.Block;
-import com.zipcoin.utilities.Miner;
+import com.zipcoin.model.Miner;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -9,6 +10,7 @@ public class minerTest {
 
     Block block = new Block(0);
     Miner miner = new Miner();
+
 
     @Test
     public void testMine_When_HashcodeCheck_Is_False(){

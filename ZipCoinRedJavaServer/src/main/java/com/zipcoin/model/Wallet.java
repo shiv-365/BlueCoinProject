@@ -1,11 +1,17 @@
-package com.zipcoin.Wallet;
+package com.zipcoin.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.security.*;
 
+@Entity
 public class Wallet {
 
-    private PrivateKey privateKey;
+    @Id
     private PublicKey publicKey;
+    private PrivateKey privateKey;
 
     public PrivateKey getPrivateKey() {
         return privateKey;
