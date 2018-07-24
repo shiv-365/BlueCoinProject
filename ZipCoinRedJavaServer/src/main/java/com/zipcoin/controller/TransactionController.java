@@ -18,6 +18,7 @@ public class TransactionController {
     //CREATE A TRANSACTION
     @RequestMapping(value = "transactions", method = RequestMethod.POST)
     public Transaction create(@RequestBody Transaction transaction){
+        
         return transactionRepository.saveAndFlush(transaction);
     }
 
@@ -28,7 +29,7 @@ public class TransactionController {
     }
 
     //READ TRANSACTIONS TO OR FROM A PUBLIC KEY
-    @RequestMapping(value = "transactions{publicKey}", method = RequestMethod.GET)
+    @RequestMapping(value = "transactions/{publicKey}", method = RequestMethod.GET)
     public List<Transaction> get(@PathVariable String publicKey){
         return transactionRepository.findAllTransactionsWithPubKey(publicKey);
     }
