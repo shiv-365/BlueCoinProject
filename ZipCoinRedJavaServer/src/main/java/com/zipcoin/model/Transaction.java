@@ -3,9 +3,16 @@ package com.zipcoin.model;
 import com.zipcoin.utilities.StringUtil;
 import org.apache.commons.codec.digest.DigestUtils;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.security.*;
 
+@Entity
 public class Transaction {
+
+    @Id
     private String transactionId; // this is also the hash of the transaction.
     private PublicKey sender; // senders address/public key.
     private PublicKey reciepient; // Recipients address/public key.
