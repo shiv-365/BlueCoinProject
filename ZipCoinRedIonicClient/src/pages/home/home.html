@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      ZipCoin BlockChain
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let block of blocks">
+      <ion-item>
+        <ion-card>
+            <ion-card-header>
+              Block #: {{block.blockNumber}}
+            </ion-card-header>
+            <ion-card-content>
+              <div>Nonce: {{ block.nonce }}</div>
+              <div>Data: {{ block.transactionList }}</div>
+              <div>Previous Hash: {{ block.previousHash }}</div>
+              <div>Current Hash: {{ block.currentHash }}</div>
+            </ion-card-content>
+        </ion-card>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

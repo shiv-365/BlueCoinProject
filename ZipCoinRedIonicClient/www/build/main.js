@@ -60,7 +60,7 @@ var HomePage = /** @class */ (function () {
         this.blockService = blockService;
         this.block = {};
         this.id = 3;
-        this.getBlock();
+        this.getAllBlocks();
     }
     HomePage.prototype.getBlock = function () {
         var _this = this;
@@ -68,15 +68,21 @@ var HomePage = /** @class */ (function () {
             _this.block = block;
         });
     };
+    HomePage.prototype.getAllBlocks = function () {
+        var _this = this;
+        this.blockService.getAllBlocks().subscribe(function (blocks) {
+            _this.blocks = blocks;
+        });
+    };
     HomePage.prototype.btnClicked = function () {
         var _this = this;
-        this.blockService.getMinedBlock(this.id).subscribe(function (block) {
-            _this.block = block;
+        this.blockService.getMinedBlock(this.id).subscribe(function (minedBlock) {
+            _this.block = minedBlock;
         });
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      ZipCoin BlockChain\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  \n  <div class="well well-success col-xs-7" id="blockchain">\n       <div class="list list-inset">\n          <label class="item item-input"> Block #:<input type="text" disabled placeholder= "{{ block.blockNumber }}" ></label>\n          <label class="item item-input"> Nonce:<input type="text" disabled placeholder= "{{ block.nonce }}" ></label>\n          <label class="item item-input"> Data:<input type="text" disabled placeholder= "{{ block.transactionList }}" > </label>\n          <label class="item item-input"> Hash:<input type="text" disabled placeholder= "{{ block.currentHash }}" ></label>\n    <!-- <label class="item item-input"> HashPrev: <input type="text" disabled placeholder="Hash"></label> -->\n          <button ion-button (click)="btnClicked()">Mine</button>\n        </div>\n  </div>   \n\n</ion-content>'/*ion-inline-end:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      ZipCoin BlockChain\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n    <ion-item-sliding *ngFor="let block of blocks">\n      <ion-item>\n        <ion-card>\n            <ion-card-header>\n              Block #: {{block.blockNumber}}\n            </ion-card-header>\n            <ion-card-content>\n              <div>Nonce: {{ block.nonce }}</div>\n              <div>Data: {{ block.transactionList }}</div>\n              <div>Previous Hash: {{ block.previousHash }}</div>\n              <div>Current Hash: {{ block.currentHash }}</div>\n            </ion-card-content>\n        </ion-card>\n      </ion-item>\n    </ion-item-sliding>\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */]) === "function" && _b || Object])
     ], HomePage);
@@ -84,6 +90,12 @@ var HomePage = /** @class */ (function () {
     var _a, _b;
 }());
 
+//make payment
+//block view
+//2 pull down list of username and pay other user "blank zips"
+// transaction are order by date
+// pay tab how many coins``
+// 4 tabs block,pay,  
 //# sourceMappingURL=home.js.map
 
 /***/ }),
@@ -118,12 +130,14 @@ var BlockService = /** @class */ (function () {
     BlockService.prototype.getMinedBlock = function (id) {
         return this.http.get(this.BLOCK_API + '/' + id + '/' + 'mine');
     };
+    BlockService.prototype.getAllBlocks = function () {
+        return this.http.get(this.BLOCK_API);
+    };
     BlockService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
     ], BlockService);
     return BlockService;
-    var _a;
 }());
 
 //# sourceMappingURL=block-service.js.map
@@ -155,9 +169,9 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(269);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common_http__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_block_service__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_block_service__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(196);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -180,11 +194,11 @@ var AppModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */]
+                __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_7__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["b" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: []
                 })
@@ -192,12 +206,12 @@ var AppModule = /** @class */ (function () {
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */]
+                __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
-                __WEBPACK_IMPORTED_MODULE_8__providers_block_service__["a" /* BlockService */],
+                __WEBPACK_IMPORTED_MODULE_7__providers_block_service__["a" /* BlockService */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
             ]
         })
@@ -244,7 +258,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
