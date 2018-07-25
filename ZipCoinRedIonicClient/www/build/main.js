@@ -144,6 +144,65 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
+/***/ 156:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_block_service__ = __webpack_require__(157);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var HomePage = /** @class */ (function () {
+    function HomePage(navCtrl, blockService) {
+        this.navCtrl = navCtrl;
+        this.blockService = blockService;
+        this.block = {};
+        this.id = 3;
+        this.getBlock();
+    }
+    HomePage.prototype.getBlock = function () {
+        var _this = this;
+        this.blockService.getBlock(this.id).subscribe(function (block) {
+            _this.block = block;
+        });
+    };
+    HomePage.prototype.btnClicked = function () {
+        var _this = this;
+        this.blockService.getMinedBlock(this.id).subscribe(function (block) {
+            _this.block = block;
+        });
+    };
+    HomePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-home',template:/*ion-inline-start:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      ZipCoin BlockChain\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n    <ion-item-sliding *ngFor="let block of blocks">\n      <ion-item>\n        <ion-card>\n            <ion-card-header>\n              Block #: {{block.blockNumber}}\n            </ion-card-header>\n            <ion-card-content>\n              <div>Nonce: {{ block.nonce }}</div>\n              <div>Data: {{ block.transactionList }}</div>\n              <div>Previous Hash: {{ block.previousHash }}</div>\n              <div>Current Hash: {{ block.currentHash }}</div>\n              <button ion-button (click)="getMinedBlock(block.id)">Mine</button>\n            </ion-card-content>\n        </ion-card>\n      </ion-item>\n    </ion-item-sliding>\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */]])
+    ], HomePage);
+    return HomePage;
+}());
+
+//make payment
+//block view
+//2 pull down list of username and pay other user "blank zips"
+// transaction are order by date
+// pay tab how many coins``
+// 4 tabs block,pay,  
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
 /***/ 157:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -255,20 +314,18 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_block_home__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common_http__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_block_service__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_wallet_wallet__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_transaction_transaction__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_tabs_tabs__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tab4_tab4__ = __webpack_require__(202);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -288,10 +345,9 @@ var AppModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_block_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_9__pages_wallet_wallet__["a" /* WalletPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_transaction_transaction__["a" /* TransactionPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_tab4_tab4__["a" /* Tab4Page */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_tabs_tabs__["a" /* TabsPage */]
             ],
             imports: [
@@ -309,10 +365,9 @@ var AppModule = /** @class */ (function () {
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_block_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_9__pages_wallet_wallet__["a" /* WalletPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_transaction_transaction__["a" /* TransactionPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_tab4_tab4__["a" /* Tab4Page */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_tabs_tabs__["a" /* TabsPage */]
             ],
             providers: [
@@ -367,72 +422,12 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=app.component.js.map
-
-/***/ }),
-
-/***/ 283:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_block_service__ = __webpack_require__(157);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var HomePage = /** @class */ (function () {
-    function HomePage(navCtrl, blockService) {
-        this.navCtrl = navCtrl;
-        this.blockService = blockService;
-        this.block = {};
-        this.id = 3;
-        this.getBlock();
-    }
-    HomePage.prototype.getBlock = function () {
-        var _this = this;
-        this.blockService.getBlock(this.id).subscribe(function (block) {
-            _this.block = block;
-        });
-    };
-    HomePage.prototype.btnClicked = function () {
-        var _this = this;
-        this.blockService.getMinedBlock(this.id).subscribe(function (block) {
-            _this.block = block;
-        });
-    };
-    HomePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/block/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      ZipCoin BlockChain\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  \n  <div class="well well-success col-xs-7" id="blockchain">\n       <div class="list list-inset">\n          <label class="item item-input"> Block #:<input type="text" disabled placeholder= "{{ block.blockNumber }}" ></label>\n          <label class="item item-input"> Nonce:<input type="text" disabled placeholder= "{{ block.nonce }}" ></label>\n          <label class="item item-input"> Data:<input type="text" disabled placeholder= "{{ block.transactionList }}" > </label>\n          <label class="item item-input"> Hash:<input type="text" disabled placeholder= "{{ block.currentHash }}" ></label>\n    <!-- <label class="item item-input"> HashPrev: <input type="text" disabled placeholder="Hash"></label> -->\n          <button ion-button (click)="btnClicked()">Mine</button>\n        </div>\n  </div>   \n\n</ion-content>'/*ion-inline-end:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/block/home.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */]])
-    ], HomePage);
-    return HomePage;
-}());
-
-//make payment
-//block view
-//2 pull down list of username and pay other user "blank zips"
-// transaction are order by date
-// pay tab how many coins``
-// 4 tabs block,pay,  
-//# sourceMappingURL=home.js.map
 
 /***/ }),
 
@@ -442,7 +437,7 @@ var HomePage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__block_home__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wallet_wallet__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__transaction_transaction__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tab4_tab4__ = __webpack_require__(202);
@@ -462,7 +457,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var TabsPage = /** @class */ (function () {
     function TabsPage() {
-        this.homePage = __WEBPACK_IMPORTED_MODULE_1__block_home__["a" /* HomePage */];
+        this.homePage = __WEBPACK_IMPORTED_MODULE_1__home_home__["a" /* HomePage */];
         this.walletPage = __WEBPACK_IMPORTED_MODULE_2__wallet_wallet__["a" /* WalletPage */];
         this.transactionPage = __WEBPACK_IMPORTED_MODULE_3__transaction_transaction__["a" /* TransactionPage */];
         this.tab4 = __WEBPACK_IMPORTED_MODULE_4__tab4_tab4__["a" /* Tab4Page */];
