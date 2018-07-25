@@ -18,7 +18,6 @@ public class TransactionController {
     //CREATE A TRANSACTION
     @RequestMapping(value = "transactions", method = RequestMethod.POST)
     public Transaction create(@RequestBody Transaction transaction){
-        updateBalances();
         return transactionRepository.saveAndFlush(transaction);
     }
 
@@ -28,11 +27,11 @@ public class TransactionController {
         return transactionRepository.findAll();
     }
 
-    //READ TRANSACTIONS TO OR FROM A PUBLIC KEY
-    @RequestMapping(value = "transactions/{publicKey}", method = RequestMethod.GET)
-    public List<Transaction> get(@PathVariable String publicKey){
-        return transactionRepository.findAllTransactionsWithPubKey(publicKey);
-    }
+//    //READ TRANSACTIONS TO OR FROM A PUBLIC KEY
+//    @RequestMapping(value = "transactions/{publicKey}", method = RequestMethod.GET)
+//    public List<Transaction> get(@PathVariable String publicKey){
+//        return transactionRepository.findAllTransactionsWithPubKey(publicKey);
+//    }
 
     //DELETE A TRANSACTION
     @RequestMapping(value = "transactions/{id}", method = RequestMethod.DELETE)

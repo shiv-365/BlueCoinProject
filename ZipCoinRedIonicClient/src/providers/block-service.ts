@@ -10,12 +10,16 @@ export class BlockService{
  constructor(public http: HttpClient) {
  }
 
- getBlock(id) {
+ getBlock(id) : Observable<any> {
    return this.http.get(this.BLOCK_API + '/' + id);
  }
 
- getMinedBlock(id) {
+ getMinedBlock(id) : Observable<any> {
   return this.http.get(this.BLOCK_API + '/' + id + '/' + 'mine');
+ }
+
+ getAllBlocks() : Observable<any> {
+   return this.http.get(this.BLOCK_API)
  }
 
 }

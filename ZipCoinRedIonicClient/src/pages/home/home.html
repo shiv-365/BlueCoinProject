@@ -7,16 +7,24 @@
 </ion-header>
 
 <ion-content padding>
-  
-  <div class="well well-success col-xs-7" id="blockchain">
-       <div class="list list-inset">
-          <label class="item item-input"> Block #:<input type="text" disabled placeholder= "{{ block.blockNumber }}" ></label>
-          <label class="item item-input"> Nonce:<input type="text" disabled placeholder= "{{ block.nonce }}" ></label>
-          <label class="item item-input"> Data:<input type="text" disabled placeholder= "{{ block.transactionList }}" > </label>
-          <label class="item item-input"> Hash:<input type="text" disabled placeholder= "{{ block.currentHash }}" ></label>
-    <!-- <label class="item item-input"> HashPrev: <input type="text" disabled placeholder="Hash"></label> -->
-          <button ion-button (click)="btnClicked()">Mine</button>
-        </div>
-  </div>   
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let block of blocks">
+      <ion-item>
+        <ion-card>
+            <ion-card-header>
+              Block #: {{block.blockNumber}}
+            </ion-card-header>
+            <ion-card-content>
+              <div>Nonce: {{ block.nonce }}</div>
+              <div>Data: {{ block.transactionList }}</div>
+              <div>Previous Hash: {{ block.previousHash }}</div>
+              <div>Current Hash: {{ block.currentHash }}</div>
+              <button ion-button (click)="getMinedBlock(block.id)">Mine</button>
+            </ion-card-content>
+        </ion-card>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
 
 </ion-content>
