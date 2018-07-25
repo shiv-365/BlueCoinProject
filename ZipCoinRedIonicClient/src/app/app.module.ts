@@ -5,6 +5,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
+<<<<<<< HEAD
+import { HomePage } from '../pages/block/home';
+=======
+>>>>>>> 9579f2fb69cc4c14932e53a8eab0ee8b02e128e4
 import { HttpClientModule } from '@angular/common/http';
 import { BlockService } from '../providers/block-service';
 import { HomePage } from '../pages/home/home';

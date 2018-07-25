@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../home/home';
+import { HomePage } from '../block/home';
 import { WalletPage } from '../wallet/wallet';
 import { TransactionPage } from '../transaction/transaction';
 import { Tab4Page } from '../tab4/tab4';
