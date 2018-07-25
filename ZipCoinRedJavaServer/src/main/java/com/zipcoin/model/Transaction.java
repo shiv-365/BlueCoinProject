@@ -4,6 +4,7 @@ import com.zipcoin.utilities.StringUtil;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import javax.persistence.*;
+
 import java.security.*;
 import java.util.List;
 
