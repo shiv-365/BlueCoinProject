@@ -32,8 +32,7 @@ public class TransactionAndWalletTest {
         System.out.println("private key :wallet 2");
         System.out.println(walletB.getPrivateKey().toString());
         //Create a test transaction from WalletA to walletB
-        Transaction transaction = new Transaction(walletA.getPublicKey(), walletB.getPublicKey(), 5);
-        transaction.generateSignature(walletA.getPrivateKey());
+//
         //Verify the signature works and verify it from the public key
 
 

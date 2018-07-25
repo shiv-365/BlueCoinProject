@@ -1,12 +1,31 @@
 package com.zipcoin.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.security.*;
 
+@Entity
 public class Wallet {
 
+
+    @Id
     private PrivateKey privateKey;
     private PublicKey publicKey;
+    private Double amount;
 
+    public Wallet() {
+        generateKeyPair();
+    }
+
+    public Double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(Double amount) {
+        this.amount = amount;
+    }
     public PrivateKey getPrivateKey() {
         return privateKey;
     }
@@ -18,9 +37,7 @@ public class Wallet {
 
 
 
-    public Wallet() {
-        generateKeyPair();
-    }
+
 
     public void generateKeyPair() {
         try {
