@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { BlockService } from '../../providers/block-service';
-import { WalletPage } from '../wallet/wallet';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
