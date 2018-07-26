@@ -1,11 +1,13 @@
 package com.zipcoin.controller;
 
 import com.zipcoin.model.Block;
-import com.zipcoin.model.Miner;
+import com.zipcoin.utilities.Miner;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.zipcoin.repository.BlockRepository;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/")
@@ -22,9 +24,16 @@ public class BlockController {
     }
 
     //READ
+    //Gets a single Block by ID
     @RequestMapping(value = "blocks/{id}", method = RequestMethod.GET)
     public Block get(@PathVariable Long id){
         return blockRepository.findOne(id);
+    }
+
+    //Gets all Blocks
+    @RequestMapping(value = "blocks", method = RequestMethod.GET)
+    public List<Block> get(){
+        return blockRepository.findAll();
     }
 
     //UPDATE
