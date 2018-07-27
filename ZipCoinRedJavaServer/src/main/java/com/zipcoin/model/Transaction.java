@@ -3,21 +3,38 @@ package com.zipcoin.model;
 import com.zipcoin.utilities.StringUtil;
 import org.apache.commons.codec.digest.DigestUtils;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+
 import java.security.*;
+import java.util.List;
 
 @Entity
 public class Transaction {
-
     @Id
-    private String transactionId; // this is also the hash of the transaction.
-    private PublicKey sender; // senders address/public key.
-    private PublicKey reciepient; // Recipients address/public key.
-    private float value;
-//    public Signature signature;// this is to prevent anybody else from spending funds in our wallet.
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private String transactionId;
+    private PublicKey sender;
+    private PublicKey reciepient;
+    private float amount;
+
+    //@OneToMany
+  /*  private List<Integer> coins;*/
+
+
+
+    //public Signature signature;
+    public Transaction()
+    {
+
+    }
+
+    public Transaction(PublicKey from, PublicKey to, float amount/*List<Integer> coins*/) {
+        this.sender = from;
+        this.reciepient = to;
+        this.amount = amount;
+        //this.coins=coins;
+
+    }
 
     public String getTransactionId() {
         return transactionId;
@@ -43,33 +60,20 @@ public class Transaction {
         this.reciepient = reciepient;
     }
 
-    public float getValue() {
-        return value;
-    }
+    public float getAmount() { return amount; }
 
-    public void setValue(float value) {
-        this.value = value;
-    }
+    public void setAmount(float amount) { this.amount = amount; }
 
+    /*public List<Integer> getCoins() { return coins; }
 
+    public void setCoins(List<Integer> coins) { this.coins = coins; }*/
 
-
-
-    // Constructor:
-    public Transaction(PublicKey from, PublicKey to, float value) {
-        this.sender = from;
-        this.reciepient = to;
-        this.value = value;
-
-    }
-
-    // This Calculates the transaction hash (which will be used as its Id)
     private String calulateHash() {
 
         return DigestUtils.sha256Hex(
                 StringUtil.getStringFromKey(sender) +
                         StringUtil.getStringFromKey(reciepient) +
-                        Float.toString(value)
+                        Float.toString(amount)
         );
     }
 //    public void generateSignature(PrivateKey privateKey) throws NoSuchAlgorithmException, InvalidKeyException, NoSuchProviderException {
