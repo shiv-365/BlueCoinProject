@@ -3,6 +3,8 @@ package com.zipcoin.controller;
 import com.zipcoin.model.Wallet;
 import com.zipcoin.repository.WalletRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,7 +20,12 @@ public class WalletController {
     //CREATE A WALLET
     @RequestMapping(value = "wallets", method = RequestMethod.POST)
     public Wallet create(@RequestBody Wallet wallet){
-        return walletRepository.saveAndFlush(wallet);
+        return walletRepository.save(wallet);
+    }
+
+    @RequestMapping(value = "wallets", method = RequestMethod.GET)
+    public ResponseEntity<Iterable<Wallet>> index() {
+        return new ResponseEntity<Iterable<Wallet>>(walletRepository.findAll(), HttpStatus.OK);
     }
 
 //    //READ A WALLET FROM PUBLIC KEY
