@@ -16,8 +16,9 @@ public class Transaction {
     private PublicKey sender;
     private PublicKey reciepient;
     private float amount;
-    @OneToMany
-    private List<String> coins;
+
+    //@OneToMany
+  /*  private List<Integer> coins;*/
 
 
 
@@ -27,11 +28,11 @@ public class Transaction {
 
     }
 
-    public Transaction(PublicKey from, PublicKey to, float amount,List<String> coins) {
+    public Transaction(PublicKey from, PublicKey to, float amount/*List<Integer> coins*/) {
         this.sender = from;
         this.reciepient = to;
         this.amount = amount;
-        this.coins=coins;
+        //this.coins=coins;
 
     }
 
@@ -63,9 +64,9 @@ public class Transaction {
 
     public void setAmount(float amount) { this.amount = amount; }
 
-    public List<String> getCoins() { return coins; }
+    /*public List<Integer> getCoins() { return coins; }
 
-    public void setCoins(List<String> coins) { this.coins = coins; }
+    public void setCoins(List<Integer> coins) { this.coins = coins; }*/
 
     private String calulateHash() {
 

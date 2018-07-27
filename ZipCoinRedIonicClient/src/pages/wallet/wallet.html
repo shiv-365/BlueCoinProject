@@ -15,4 +15,47 @@
 
 <ion-content padding>
 
+
+  
+  <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-select [(ngModel)]="name">
+        <ion-option value="navya">navya</ion-option>
+        <ion-option value="aleena">aleena</ion-option>
+      </ion-select>
+     </ion-item>
+     <ion-item>
+        <ion-label>current balance</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Public Key</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      <br>
+      <br>
+      <div class = "bar bar-subheader bar-assertive">
+          <h2 class = "title">Payment</h2>
+       </div>
+       <ion-item>
+          <ion-label>From</ion-label>
+          <ion-select [(ngModel)]="name">
+            <ion-option value="navya">navya</ion-option>
+            <ion-option value="aleena">aleena</ion-option>
+          </ion-select>
+         </ion-item>
+         <ion-item>
+            <ion-label>To</ion-label>
+            <ion-select [(ngModel)]="to">
+              <ion-option value="navya">navya</ion-option>
+              <ion-option value="aleena">aleena</ion-option>
+            </ion-select>
+           </ion-item>
+      
+          <ion-item>
+              <ion-label>Amount</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+            <br>
+            <button ion-button>Pay</button>
 </ion-content>
