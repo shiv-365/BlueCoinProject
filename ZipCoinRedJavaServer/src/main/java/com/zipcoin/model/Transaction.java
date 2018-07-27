@@ -1,20 +1,18 @@
 package com.zipcoin.model;
 
-import com.zipcoin.utilities.StringUtil;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import javax.persistence.*;
 
-import java.security.*;
-import java.util.List;
 
 @Entity
 public class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String transactionId;
-    private PublicKey sender;
-    private PublicKey reciepient;
+    private Long transactionId;
+
+    private String sender;
+    private String reciepient;
     private float amount;
 
     //@OneToMany
@@ -28,7 +26,7 @@ public class Transaction {
 
     }
 
-    public Transaction(PublicKey from, PublicKey to, float amount/*List<Integer> coins*/) {
+    public Transaction(String from, String to, float amount/*List<Integer> coins*/) {
         this.sender = from;
         this.reciepient = to;
         this.amount = amount;
@@ -36,27 +34,27 @@ public class Transaction {
 
     }
 
-    public String getTransactionId() {
+    public Long getTransactionId() {
         return transactionId;
     }
 
-    public void setTransactionId(String transactionId) {
+    public void setTransactionId(Long transactionId) {
         this.transactionId = transactionId;
     }
 
-    public PublicKey getSender() {
+    public String getSender() {
         return sender;
     }
 
-    public void setSender(PublicKey sender) {
+    public void setSender(String sender) {
         this.sender = sender;
     }
 
-    public PublicKey getReciepient() {
+    public String getReciepient() {
         return reciepient;
     }
 
-    public void setReciepient(PublicKey reciepient) {
+    public void setReciepient(String reciepient) {
         this.reciepient = reciepient;
     }
 
@@ -71,8 +69,8 @@ public class Transaction {
     private String calulateHash() {
 
         return DigestUtils.sha256Hex(
-                StringUtil.getStringFromKey(sender) +
-                        StringUtil.getStringFromKey(reciepient) +
+                sender +
+                        (reciepient) +
                         Float.toString(amount)
         );
     }
