@@ -451,7 +451,7 @@ var MyApp = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-throw new Error("Cannot find module \"../block/home\"");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wallet_wallet__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__transaction_transaction__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tab4_tab4__ = __webpack_require__(102);
@@ -471,7 +471,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var TabsPage = /** @class */ (function () {
     function TabsPage() {
-        this.homePage = __WEBPACK_IMPORTED_MODULE_1__block_home__["HomePage"];
+        this.homePage = __WEBPACK_IMPORTED_MODULE_1__home_home__["a" /* HomePage */];
         this.walletPage = __WEBPACK_IMPORTED_MODULE_2__wallet_wallet__["a" /* WalletPage */];
         this.transactionPage = __WEBPACK_IMPORTED_MODULE_3__transaction_transaction__["a" /* TransactionPage */];
         this.tab4 = __WEBPACK_IMPORTED_MODULE_4__tab4_tab4__["a" /* Tab4Page */];
