@@ -6,6 +6,7 @@
 
 </ion-header>
 <ion-content padding>
+<<<<<<< HEAD
   <ion-list>
       <ion-item-sliding *ngFor="let block of blocks">
         <ion-item>
@@ -18,3 +19,24 @@
       </ion-item-sliding>
     </ion-list>
 </ion-content>
+=======
+
+    <ion-list>
+        <ion-item-sliding *ngFor="let transaction of transactions">
+          <ion-item>
+            <ion-card>
+                <ion-card-header>
+                  Transaction #: {{transaction.transactionId}}
+                </ion-card-header>
+                <ion-card-content>
+                  <div>Sender: {{ transaction.sender }}</div>
+                  <div>Recipient: {{ transaction.recipient }}</div>
+                  <div>Amount: {{ transaction.amount }}</div>
+                </ion-card-content>
+            </ion-card>
+          </ion-item>
+        </ion-item-sliding>
+      </ion-list>
+
+</ion-content>
+>>>>>>> 8b1e22a5a0caf7af0d9105c89403f7d2bcc4b254

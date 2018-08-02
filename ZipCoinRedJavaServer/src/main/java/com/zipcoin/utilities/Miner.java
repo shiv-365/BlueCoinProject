@@ -21,4 +21,6 @@ public class Miner {
         this.hashCodeCheck = hashCodeCheck;
     }
 
+    //Testing...
+
 }
