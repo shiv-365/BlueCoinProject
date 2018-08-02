@@ -20,7 +20,7 @@ export class TransactionPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
   public transactionService: TransactionService){
-    this.getAllTransactions;
+    this.getAllTransactions();
   }
 
   ionViewDidLoad() {

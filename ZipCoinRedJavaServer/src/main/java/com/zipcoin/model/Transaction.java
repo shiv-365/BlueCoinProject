@@ -54,8 +54,8 @@ public class Transaction {
         return recipient;
     }
 
-    public void setReciepient(String reciepient) {
-        this.recipient = reciepient;
+    public void setRecipient(String recipient) {
+        this.recipient = recipient;
     }
 
     public float getAmount() { return amount; }
