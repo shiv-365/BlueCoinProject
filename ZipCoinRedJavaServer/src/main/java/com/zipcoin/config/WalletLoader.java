@@ -21,7 +21,7 @@ public class WalletLoader implements ApplicationRunner {
     public void run(ApplicationArguments applicationArguments) throws Exception {
         Wallet[] wallets = new Wallet[]
                 {
-                        new Wallet("ANN","34",80),
+                        new Wallet("ann","34",80),
                         new Wallet("sen","3564",8)
 
 
