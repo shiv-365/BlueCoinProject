@@ -9,8 +9,5 @@
         <module name="ZipCoin-RED" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ZipCoin-RED" target="1.6" />
-    </bytecodeTargetLevel>
   </component>
 </project>
