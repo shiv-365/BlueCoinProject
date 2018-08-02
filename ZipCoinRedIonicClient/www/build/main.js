@@ -78,7 +78,7 @@ var TabsPage = /** @class */ (function () {
     }
     TabsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tabs',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="homePage" tabTitle="ZipCoin-BlockChain" tabIcon="link"></ion-tab>\n  <ion-tab [root]="walletPage" tabTitle="ZipCoin Wallet" tabIcon="cash"></ion-tab>\n  <ion-tab [root]="transactionPage" tabTitle="ZipCoin Transactions" tabIcon="contacts"></ion-tab>\n  <ion-tab [root]="tab4" tabTitle="Ziptab" tabIcon="star"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/tabs/tabs.html"*/,
+            selector: 'page-tabs',template:/*ion-inline-start:"/Users/shivamp/labs/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="homePage" tabTitle="ZipCoin-BlockChain" tabIcon="link"></ion-tab>\n  <ion-tab [root]="walletPage" tabTitle="ZipCoin Wallet" tabIcon="cash"></ion-tab>\n  <ion-tab [root]="transactionPage" tabTitle="ZipCoin Transactions" tabIcon="contacts"></ion-tab>\n  <ion-tab [root]="tab4" tabTitle="Ziptab" tabIcon="star"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"/Users/shivamp/labs/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/tabs/tabs.html"*/,
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -129,7 +129,7 @@ var WalletPage = /** @class */ (function () {
     };
     WalletPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-wallet',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/wallet/wallet.html"*/'<!--\n  Generated template for the WalletPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Wallet</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n\n  \n  <ion-item>\n      <ion-label>Name</ion-label>\n      <ion-select [(ngModel)]="name">\n        <ion-option value="navya">navya</ion-option>\n        <ion-option value="aleena">aleena</ion-option>\n      </ion-select>\n     </ion-item>\n     <ion-item>\n        <ion-label>current balance</ion-label>\n        <ion-input></ion-input>\n      </ion-item>\n      <ion-item>\n          <ion-label>Public Key</ion-label>\n          <ion-input></ion-input>\n        </ion-item>\n      <br>\n      <br>\n      <div class = "bar bar-subheader bar-assertive">\n          <h2 class = "title">Payment</h2>\n       </div>\n       <ion-item>\n          <ion-label>From</ion-label>\n          <ion-select [(ngModel)]="name">\n            <ion-option value="navya">navya</ion-option>\n            <ion-option value="aleena">aleena</ion-option>\n          </ion-select>\n         </ion-item>\n         <ion-item>\n            <ion-label>To</ion-label>\n            <ion-select [(ngModel)]="to">\n              <ion-option value="navya">navya</ion-option>\n              <ion-option value="aleena">aleena</ion-option>\n            </ion-select>\n           </ion-item>\n      \n          <ion-item>\n              <ion-label>Amount</ion-label>\n              <ion-input></ion-input>\n            </ion-item>\n            <br>\n            <button ion-button>Pay</button>\n</ion-content>\n'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/wallet/wallet.html"*/,
+            selector: 'page-wallet',template:/*ion-inline-start:"/Users/shivamp/labs/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/wallet/wallet.html"*/'<!--\n  Generated template for the WalletPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Wallet</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n\n  \n  <ion-item>\n      <ion-label>Name</ion-label>\n      <ion-select [(ngModel)]="name">\n        <ion-option value="navya">navya</ion-option>\n        <ion-option value="aleena">aleena</ion-option>\n      </ion-select>\n     </ion-item>\n     <ion-item>\n        <ion-label>current balance</ion-label>\n        <ion-input></ion-input>\n      </ion-item>\n      <ion-item>\n          <ion-label>Public Key</ion-label>\n          <ion-input></ion-input>\n        </ion-item>\n      <br>\n      <br>\n      <div class = "bar bar-subheader bar-assertive">\n          <h2 class = "title">Payment</h2>\n       </div>\n       <ion-item>\n          <ion-label>From</ion-label>\n          <ion-select [(ngModel)]="name">\n            <ion-option value="navya">navya</ion-option>\n            <ion-option value="aleena">aleena</ion-option>\n          </ion-select>\n         </ion-item>\n         <ion-item>\n            <ion-label>To</ion-label>\n            <ion-select [(ngModel)]="to">\n              <ion-option value="navya">navya</ion-option>\n              <ion-option value="aleena">aleena</ion-option>\n            </ion-select>\n           </ion-item>\n      \n          <ion-item>\n              <ion-label>Amount</ion-label>\n              <ion-input></ion-input>\n            </ion-item>\n            <br>\n            <button ion-button>Pay</button>\n</ion-content>\n'/*ion-inline-end:"/Users/shivamp/labs/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/wallet/wallet.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_transaction_service__["a" /* TransactionService */]])
     ], WalletPage);
@@ -183,7 +183,7 @@ var TransactionPage = /** @class */ (function () {
     };
     TransactionPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-transaction',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/transaction/transaction.html"*/'<!--\n  Generated template for the TransactionPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Transaction</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/transaction/transaction.html"*/,
+            selector: 'page-transaction',template:/*ion-inline-start:"/Users/shivamp/labs/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/transaction/transaction.html"*/'<!--\n  Generated template for the TransactionPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Transaction</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/shivamp/labs/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/transaction/transaction.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_2__providers_transaction_service__["a" /* TransactionService */]])
@@ -296,7 +296,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      ZipCoin BlockChain\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n    <ion-item-sliding *ngFor="let block of blocks">\n      <ion-item>\n        <ion-card>\n            <ion-card-header>\n              Block #: {{block.blockNumber}}\n            </ion-card-header>\n            <ion-card-content>\n              <div>Nonce: {{ block.nonce }}</div>\n              <div>Data: {{ block.transactionList }}</div>\n              <div>Previous Hash: {{ block.previousHash }}</div>\n              <div>Current Hash: {{ block.currentHash }}</div>\n              <button ion-button (click)="getMinedBlock(block.id)">Mine</button>\n            </ion-card-content>\n        </ion-card>\n      </ion-item>\n    </ion-item-sliding>\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/shivamp/labs/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      ZipCoin BlockChain\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n    <ion-item-sliding *ngFor="let block of blocks">\n      <ion-item>\n        <ion-card>\n            <ion-card-header>\n              Block #: {{block.blockNumber}}\n            </ion-card-header>\n            <ion-card-content>\n              <div>Nonce: {{ block.nonce }}</div>\n              <div>Data: {{ block.transactionList }}</div>\n              <div>Previous Hash: {{ block.previousHash }}</div>\n              <div>Current Hash: {{ block.currentHash }}</div>\n              <button ion-button (click)="getMinedBlock(block.id)">Mine</button>\n            </ion-card-content>\n        </ion-card>\n      </ion-item>\n    </ion-item-sliding>\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"/Users/shivamp/labs/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_block_service__["a" /* BlockService */]])
     ], HomePage);
@@ -495,7 +495,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/shivamp/labs/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/shivamp/labs/ZipCoin-RED/ZipCoinRedIonicClient/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -533,14 +533,13 @@ var TransactionService = /** @class */ (function () {
     TransactionService.prototype.createTransaction = function (transaction) {
         return this.http.post(this.TRANSACTION_API, transaction);
     };
-    TransactionService.prototype.getAllTransactions = function () {
-        return this.http.get(this.TRANSACTION_API);
-    };
-    TransactionService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
-    ], TransactionService);
-    return TransactionService;
+    Tab4Page = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-tab4',template:/*ion-inline-start:"/Users/shivamp/labs/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/tab4/tab4.html"*/'<!--\n  Generated template for the Tab4Page page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>tab4</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/shivamp/labs/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/tab4/tab4.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], Tab4Page);
+    return Tab4Page;
 }());
 
 //# sourceMappingURL=transaction-service.js.map
