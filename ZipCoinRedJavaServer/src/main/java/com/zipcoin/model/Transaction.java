@@ -14,7 +14,7 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String transactionId;
     private PublicKey sender;
-    private PublicKey reciepient;
+    private PublicKey recipient;
     private float amount;
 
     //@OneToMany
@@ -30,7 +30,7 @@ public class Transaction {
 
     public Transaction(PublicKey from, PublicKey to, float amount/*List<Integer> coins*/) {
         this.sender = from;
-        this.reciepient = to;
+        this.recipient = to;
         this.amount = amount;
         //this.coins=coins;
 
@@ -53,11 +53,11 @@ public class Transaction {
     }
 
     public PublicKey getReciepient() {
-        return reciepient;
+        return recipient;
     }
 
     public void setReciepient(PublicKey reciepient) {
-        this.reciepient = reciepient;
+        this.recipient = reciepient;
     }
 
     public float getAmount() { return amount; }
@@ -72,7 +72,7 @@ public class Transaction {
 
         return DigestUtils.sha256Hex(
                 StringUtil.getStringFromKey(sender) +
-                        StringUtil.getStringFromKey(reciepient) +
+                        StringUtil.getStringFromKey(recipient) +
                         Float.toString(amount)
         );
     }
