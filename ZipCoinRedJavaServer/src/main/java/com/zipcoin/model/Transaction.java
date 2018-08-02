@@ -50,7 +50,7 @@ public class Transaction {
         this.sender = sender;
     }
 
-    public String getReciepient() {
+    public String getRecipient() {
         return recipient;
     }
 
@@ -85,4 +85,5 @@ public class Transaction {
     // String data = StringUtil.getStringFromKey(sender) + StringUtil.getStringFromKey(reciepient) + Float.toString(value)    ;
     // return StringUtil.verifyECDSASig(sender, data, this.signature);
     //}
+
 }

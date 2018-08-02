@@ -49,101 +49,6 @@ var Tab4Page = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wallet_wallet__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__transaction_transaction__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tab4_tab4__ = __webpack_require__(101);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var TabsPage = /** @class */ (function () {
-    function TabsPage() {
-        this.homePage = __WEBPACK_IMPORTED_MODULE_1__home_home__["a" /* HomePage */];
-        this.walletPage = __WEBPACK_IMPORTED_MODULE_2__wallet_wallet__["a" /* WalletPage */];
-        this.transactionPage = __WEBPACK_IMPORTED_MODULE_3__transaction_transaction__["a" /* TransactionPage */];
-        this.tab4 = __WEBPACK_IMPORTED_MODULE_4__tab4_tab4__["a" /* Tab4Page */];
-    }
-    TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tabs',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="homePage" tabTitle="ZipCoin-BlockChain" tabIcon="link"></ion-tab>\n  <ion-tab [root]="walletPage" tabTitle="ZipCoin Wallet" tabIcon="cash"></ion-tab>\n  <ion-tab [root]="transactionPage" tabTitle="ZipCoin Transactions" tabIcon="contacts"></ion-tab>\n  <ion-tab [root]="tab4" tabTitle="Ziptab" tabIcon="star"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/tabs/tabs.html"*/,
-        }),
-        __metadata("design:paramtypes", [])
-    ], TabsPage);
-    return TabsPage;
-}());
-
-//# sourceMappingURL=tabs.js.map
-
-/***/ }),
-
-/***/ 103:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WalletPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_transaction_service__ = __webpack_require__(50);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the WalletPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var WalletPage = /** @class */ (function () {
-    function WalletPage(navCtrl, navParams, transactionService) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.transactionService = transactionService;
-    }
-    WalletPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad WalletPage');
-    };
-    WalletPage.prototype.createTransaction = function () {
-        this.transactionService.createTransaction(this.transaction);
-    };
-    WalletPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-wallet',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/wallet/wallet.html"*/'<!--\n  Generated template for the WalletPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Wallet</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n\n  \n  <ion-item>\n      <ion-label>Name</ion-label>\n      <ion-select [(ngModel)]="name">\n        <ion-option value="ann">Ann</ion-option>\n        <ion-option value="sen">Sen</ion-option>\n      </ion-select>\n     </ion-item>\n     <ion-item>\n        <ion-label>current balance</ion-label>\n        <ion-input></ion-input>\n      </ion-item>\n      <ion-item>\n          <ion-label>Public Key</ion-label>\n          <ion-input></ion-input>\n        </ion-item>\n      <br>\n      <br>\n      <div class = "bar bar-subheader bar-assertive">\n          <h2 class = "title">Payment</h2>\n       </div>\n       <ion-item>\n          <ion-label>From</ion-label>\n          <ion-select [(ngModel)]="name">\n            <ion-option value="ann">Ann</ion-option>\n            <ion-option value="sen">Sen</ion-option>\n          </ion-select>\n         </ion-item>\n         <ion-item>\n            <ion-label>To</ion-label>\n            <ion-select [(ngModel)]="to">\n              <ion-option value="ann">Ann</ion-option>\n              <ion-option value="sen">Sen</ion-option>\n            </ion-select>\n           </ion-item>\n      \n          <ion-item>\n              <ion-label>Amount</ion-label>\n              <ion-input></ion-input>\n            </ion-item>\n            <br>\n            <button ion-button>Pay</button>\n</ion-content>\n'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/wallet/wallet.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_transaction_service__["a" /* TransactionService */]])
-    ], WalletPage);
-    return WalletPage;
-}());
-
-//# sourceMappingURL=wallet.js.map
-
-/***/ }),
-
-/***/ 104:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TransactionPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
@@ -184,15 +89,110 @@ var TransactionPage = /** @class */ (function () {
     };
     TransactionPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-transaction',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/transaction/transaction.html"*/'<!--\n  Generated template for the TransactionPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Transaction</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n    <ion-list>\n        <ion-item-sliding *ngFor="let transaction of transactions">\n          <ion-item>\n            <ion-card>\n                <ion-card-header>\n                  Transaction #: {{transaction.transactionId}}\n                </ion-card-header>\n                <ion-card-content>\n                  <div>Sender: {{ transaction.sender }}</div>\n                  <div>Recipient: {{ block.recipient }}</div>\n                  <div>Amount: {{ block.amount }}</div>\n                </ion-card-content>\n            </ion-card>\n          </ion-item>\n        </ion-item-sliding>\n      </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/transaction/transaction.html"*/,
+            selector: 'page-transaction',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/transaction/transaction.html"*/'<!--\n  Generated template for the TransactionPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Transaction</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n    <ion-list>\n        <ion-item-sliding *ngFor="let transaction of transactions">\n          <ion-item>\n            <ion-card>\n                <ion-card-header>\n                  Transaction #: {{transaction.transactionId}}\n                </ion-card-header>\n                <ion-card-content>\n                  <div>Sender: {{ transaction.sender }}</div>\n                  <div>Recipient: {{ transaction.recipient }}</div>\n                  <div>Amount: {{ transaction.amount }}</div>\n                </ion-card-content>\n            </ion-card>\n          </ion-item>\n        </ion-item-sliding>\n      </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/transaction/transaction.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_transaction_service__["a" /* TransactionService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_transaction_service__["a" /* TransactionService */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_transaction_service__["a" /* TransactionService */]])
     ], TransactionPage);
     return TransactionPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=transaction.js.map
+
+/***/ }),
+
+/***/ 103:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wallet_wallet__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__transaction_transaction__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tab4_tab4__ = __webpack_require__(101);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var TabsPage = /** @class */ (function () {
+    function TabsPage() {
+        this.homePage = __WEBPACK_IMPORTED_MODULE_1__home_home__["a" /* HomePage */];
+        this.walletPage = __WEBPACK_IMPORTED_MODULE_2__wallet_wallet__["a" /* WalletPage */];
+        this.transactionPage = __WEBPACK_IMPORTED_MODULE_3__transaction_transaction__["a" /* TransactionPage */];
+        this.tab4 = __WEBPACK_IMPORTED_MODULE_4__tab4_tab4__["a" /* Tab4Page */];
+    }
+    TabsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-tabs',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="homePage" tabTitle="ZipCoin-BlockChain" tabIcon="link"></ion-tab>\n  <ion-tab [root]="walletPage" tabTitle="ZipCoin Wallet" tabIcon="cash"></ion-tab>\n  <ion-tab [root]="transactionPage" tabTitle="ZipCoin Transactions" tabIcon="contacts"></ion-tab>\n  <ion-tab [root]="tab4" tabTitle="Ziptab" tabIcon="star"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/tabs/tabs.html"*/,
+        }),
+        __metadata("design:paramtypes", [])
+    ], TabsPage);
+    return TabsPage;
+}());
+
+//# sourceMappingURL=tabs.js.map
+
+/***/ }),
+
+/***/ 104:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WalletPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_transaction_service__ = __webpack_require__(50);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the WalletPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var WalletPage = /** @class */ (function () {
+    function WalletPage(navCtrl, navParams, transactionService) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.transactionService = transactionService;
+    }
+    WalletPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad WalletPage');
+    };
+    WalletPage.prototype.createTransaction = function () {
+        this.transactionService.createTransaction(this.transaction);
+    };
+    WalletPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-wallet',template:/*ion-inline-start:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/wallet/wallet.html"*/'<!--\n  Generated template for the WalletPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Wallet</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n\n  \n  <ion-item>\n      <ion-label>Name</ion-label>\n      <ion-select [(ngModel)]="name">\n        <ion-option value="ann">Ann</ion-option>\n        <ion-option value="sen">Sen</ion-option>\n      </ion-select>\n     </ion-item>\n     <ion-item>\n        <ion-label>current balance</ion-label>\n        <ion-input></ion-input>\n      </ion-item>\n      <ion-item>\n          <ion-label>Public Key</ion-label>\n          <ion-input></ion-input>\n        </ion-item>\n      <br>\n      <br>\n      <div class = "bar bar-subheader bar-assertive">\n          <h2 class = "title">Payment</h2>\n       </div>\n       <!-- <ion-item>\n          <ion-label>From</ion-label>\n          <ion-select [(ngModel)]="name">\n            <ion-option value="ann">Ann</ion-option>\n            <ion-option value="sen">Sen</ion-option>\n          </ion-select>\n         </ion-item> -->\n         <ion-item>\n            <ion-label>To</ion-label>\n            <ion-select [(ngModel)]="to">\n              <ion-option value="ann">Ann</ion-option>\n              <ion-option value="sen">Sen</ion-option>\n            </ion-select>\n           </ion-item>\n      \n          <ion-item>\n              <ion-label>Amount</ion-label>\n              <ion-input></ion-input>\n            </ion-item>\n            <br>\n            <button ion-button>Pay</button>\n</ion-content>\n'/*ion-inline-end:"/Users/ericf/ZCWProjects/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/wallet/wallet.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_transaction_service__["a" /* TransactionService */]])
+    ], WalletPage);
+    return WalletPage;
+}());
+
+//# sourceMappingURL=wallet.js.map
 
 /***/ }),
 
@@ -222,11 +222,11 @@ var map = {
 		3
 	],
 	"../pages/tabs/tabs.module": [
-		281,
+		282,
 		2
 	],
 	"../pages/transaction/transaction.module": [
-		282,
+		281,
 		1
 	],
 	"../pages/wallet/wallet.module": [
@@ -386,9 +386,9 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_block_service__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_wallet_wallet__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_transaction_transaction__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_tabs_tabs__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_wallet_wallet__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_transaction_transaction__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_tabs_tabs__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tab4_tab4__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_transaction_service__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -430,8 +430,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/tab4/tab4.module#Tab4PageModule', name: 'Tab4Page', segment: 'tab4', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/transaction/transaction.module#TransactionPageModule', name: 'TransactionPage', segment: 'transaction', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wallet/wallet.module#WalletPageModule', name: 'WalletPage', segment: 'wallet', priority: 'low', defaultHistory: [] }
                     ]
                 })
@@ -470,7 +470,7 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
