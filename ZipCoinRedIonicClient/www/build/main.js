@@ -76,6 +76,7 @@ var TransactionPage = /** @class */ (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.transactionService = transactionService;
+        this.getAllTransactions;
     }
     TransactionPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad TransactionPage');
