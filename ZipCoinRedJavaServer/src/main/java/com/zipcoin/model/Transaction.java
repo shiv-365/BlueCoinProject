@@ -12,7 +12,7 @@ public class Transaction {
     private Long transactionId;
 
     private String sender;
-    private String reciepient;
+    private String recipient;
     private float amount;
 
     //@OneToMany
@@ -28,7 +28,7 @@ public class Transaction {
 
     public Transaction(String from, String to, float amount/*List<Integer> coins*/) {
         this.sender = from;
-        this.reciepient = to;
+        this.recipient = to;
         this.amount = amount;
         //this.coins=coins;
 
@@ -50,12 +50,12 @@ public class Transaction {
         this.sender = sender;
     }
 
-    public String getReciepient() {
-        return reciepient;
+    public String getRecipient() {
+        return recipient;
     }
 
-    public void setReciepient(String reciepient) {
-        this.reciepient = reciepient;
+    public void setRecipient(String recipient) {
+        this.recipient = recipient;
     }
 
     public float getAmount() { return amount; }
@@ -70,7 +70,8 @@ public class Transaction {
 
         return DigestUtils.sha256Hex(
                 sender +
-                        (reciepient) +
+                        (recipient) +
+
                         Float.toString(amount)
         );
     }
@@ -84,4 +85,5 @@ public class Transaction {
     // String data = StringUtil.getStringFromKey(sender) + StringUtil.getStringFromKey(reciepient) + Float.toString(value)    ;
     // return StringUtil.verifyECDSASig(sender, data, this.signature);
     //}
+
 }
