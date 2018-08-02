@@ -9,16 +9,10 @@ import javax.persistence.*;
 public class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-<<<<<<< HEAD
     private Long transactionId;
 
     private String sender;
-    private String reciepient;
-=======
-    private String transactionId;
-    private PublicKey sender;
-    private PublicKey recipient;
->>>>>>> posttransaction
+    private String recipient;
     private float amount;
 
     //@OneToMany
@@ -56,21 +50,12 @@ public class Transaction {
         this.sender = sender;
     }
 
-<<<<<<< HEAD
     public String getReciepient() {
-        return reciepient;
-    }
-
-    public void setReciepient(String reciepient) {
-        this.reciepient = reciepient;
-=======
-    public PublicKey getReciepient() {
         return recipient;
     }
 
-    public void setReciepient(PublicKey reciepient) {
+    public void setReciepient(String reciepient) {
         this.recipient = reciepient;
->>>>>>> posttransaction
     }
 
     public float getAmount() { return amount; }
@@ -84,13 +69,9 @@ public class Transaction {
     private String calulateHash() {
 
         return DigestUtils.sha256Hex(
-<<<<<<< HEAD
                 sender +
-                        (reciepient) +
-=======
-                StringUtil.getStringFromKey(sender) +
-                        StringUtil.getStringFromKey(recipient) +
->>>>>>> posttransaction
+                        (recipient) +
+
                         Float.toString(amount)
         );
     }
