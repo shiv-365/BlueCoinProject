@@ -70,7 +70,7 @@ public class Transaction {
 
         return DigestUtils.sha256Hex(
                 sender +
-                        (recipient) +
+                        recipient +
 
                         Float.toString(amount)
         );
