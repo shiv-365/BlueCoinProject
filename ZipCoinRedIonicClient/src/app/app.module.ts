@@ -12,6 +12,7 @@ import { WalletPage } from '../pages/wallet/wallet';
 import { TransactionPage } from '../pages/transaction/transaction';
 import { TabsPage } from '../pages/tabs/tabs';
 import { Tab4Page } from '../pages/tab4/tab4';
+import { TransactionService } from '../providers/transaction-service';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { Tab4Page } from '../pages/tab4/tab4';
     StatusBar,
     SplashScreen,
     BlockService,
+    TransactionService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
