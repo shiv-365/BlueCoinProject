@@ -23,7 +23,7 @@ public class TransactionController {
 
     //READ-ALL TRANSACTIONS
     @RequestMapping(value = "transactions", method = RequestMethod.GET)
-    public List<Transaction> get(){
+    public Iterable<Transaction> get(){
         return transactionRepository.findAll();
     }
 
