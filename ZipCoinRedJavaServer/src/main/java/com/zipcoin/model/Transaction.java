@@ -66,11 +66,11 @@ public class Transaction {
 
     public void setCoins(List<Integer> coins) { this.coins = coins; }*/
 
-    private String calulateHash() {
+    private String calculateHash() {
 
         return DigestUtils.sha256Hex(
                 sender +
-                        (recipient) +
+                        recipient +
 
                         Float.toString(amount)
         );

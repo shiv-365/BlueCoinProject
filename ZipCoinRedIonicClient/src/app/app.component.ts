@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+<<<<<<< HEAD
+import { HomePage } from '../pages/home/home';
+=======
+>>>>>>> 8b1e22a5a0caf7af0d9105c89403f7d2bcc4b254
 import { TabsPage } from '../pages/tabs/tabs';
 @Component({
   templateUrl: 'app.html'
