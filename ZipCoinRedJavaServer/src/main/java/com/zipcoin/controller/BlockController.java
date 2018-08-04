@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import com.zipcoin.repository.BlockRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("api/v1/")
@@ -17,34 +18,21 @@ public class BlockController {
     @Autowired
     private BlockRepository blockRepository;
 
-    //CREATE
     @RequestMapping(value = "blocks", method = RequestMethod.POST)
     public Block create(@RequestBody Block block){
         return blockRepository.saveAndFlush(block);
     }
 
-    //READ
-    //Gets a single Block by ID
     @RequestMapping(value = "blocks/{id}", method = RequestMethod.GET)
-    public Block get(@PathVariable Long id){
-        return blockRepository.findOne(id);
+    public Optional<Block> get(@PathVariable Long id){
+        return blockRepository.findById(id);
     }
 
-    //Gets all Blocks
     @RequestMapping(value = "blocks", method = RequestMethod.GET)
     public List<Block> get(){
         return blockRepository.findAll();
     }
 
-    //UPDATE
-    @RequestMapping(value = "blocks/{id}", method = RequestMethod.PUT)
-    public Block update(@PathVariable Long id, @RequestBody Block block){
-        Block blockToUpdate = blockRepository.findOne(id);
-        BeanUtils.copyProperties(block, blockToUpdate);
-        return blockRepository.saveAndFlush(blockToUpdate);
-    }
-
-    //DELETE
     @RequestMapping(value = "blocks/{id}", method = RequestMethod.DELETE)
     public Block delete(@PathVariable Long id){
         Block blockToDelete = blockRepository.findOne(id);
@@ -52,7 +40,6 @@ public class BlockController {
         return blockToDelete;
     }
 
-    //MINE
     @RequestMapping(value = "blocks/{id}/mine", method = RequestMethod.GET)
     public Block mine(@PathVariable Long id){
         Block blockToMine = blockRepository.findOne(id);
