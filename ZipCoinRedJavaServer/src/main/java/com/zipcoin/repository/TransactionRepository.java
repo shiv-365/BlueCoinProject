@@ -15,7 +15,7 @@ import java.util.List;
 
 @Repository
 //@RepositoryRestResource(collectionResourceRel = "transactions", path = "transactions")
-public interface TransactionRepository extends CrudRepository<Transaction, Long> {
+public interface TransactionRepository extends JpaRepository<Transaction, Long> {
 
 //    @Query("SELECT t FROM transaction t WHERE t.sender = :publicKey OR t.recipient = :publicKey")
 //    List<Transaction> findAllTransactionsWithPubKey(@Param("publicKey") String publicKey);

@@ -13,10 +13,10 @@ public class WalletLoader implements ApplicationRunner {
     private WalletRepository walletRepository;
 
     @Autowired
-    public WalletLoader(WalletRepository walletRepository)
-    {
+    public WalletLoader(WalletRepository walletRepository) {
         this.walletRepository = walletRepository;
     }
+
     @Override
     public void run(ApplicationArguments applicationArguments) throws Exception {
         Wallet[] wallets = new Wallet[]
@@ -30,8 +30,7 @@ public class WalletLoader implements ApplicationRunner {
         {
             this.walletRepository.save(wallet);
         }
-
-
     }
+
 }
 
