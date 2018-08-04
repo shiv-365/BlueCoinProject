@@ -1,7 +1,6 @@
 package com.zipcoin.service;
 
 import com.zipcoin.model.Transaction;
-import com.zipcoin.model.Wallet;
 import com.zipcoin.repository.TransactionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

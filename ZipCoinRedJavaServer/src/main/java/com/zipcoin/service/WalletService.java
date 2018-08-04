@@ -29,8 +29,8 @@ public class WalletService {
         return walletRepository.findWalletByPublicKey(publicKey);
     }
 
-    public Collection<String> getAllPublicKeys() {
-        return walletRepository.findAllPublicKeys();
-    }
+//    public Collection<Object[]> getAllPublicKeys() {
+//        return walletRepository.findAllPublicKey();
+//    }
 
 }

@@ -19,15 +19,11 @@ public class WalletLoader implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments applicationArguments) throws Exception {
-        Wallet[] wallets = new Wallet[]
-                {
-                        new Wallet("ann","34",80),
-                        new Wallet("sen","3564",8)
-
-
-                };
-        for(Wallet wallet :wallets)
-        {
+        Wallet[] wallets = new Wallet[]{
+                new Wallet("ann","34",80),
+                new Wallet("sen","3564",8)
+        };
+        for(Wallet wallet :wallets) {
             this.walletRepository.save(wallet);
         }
     }

@@ -7,8 +7,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
+import static com.zipcoin.config.WalletApis.BASE_WALLET_URL;
+import static com.zipcoin.config.WalletApis.GET_ALL_WALLET_PUBLIC_KEYS;
+import static com.zipcoin.config.WalletApis.GET_WALLET_BY_PUBLIC_KEY;
+
 @RestController
-@RequestMapping("api/v1/")
 @CrossOrigin(origins = {"http://localhost:8100"})
 public class WalletController {
 
@@ -19,24 +22,24 @@ public class WalletController {
         this.walletService = walletService;
     }
 
-    @PostMapping(path = "wallets")
+    @PostMapping(path = BASE_WALLET_URL)
     public Wallet createWallet(@RequestBody Wallet wallet){
         return walletService.createWallet(wallet);
     }
 
-    @GetMapping(path = "wallets")
+    @GetMapping(path = BASE_WALLET_URL)
     public Collection<Wallet> getAllWallets() {
         return walletService.getAllWallets();
     }
 
-    @GetMapping(path = "wallets/{publicKey}")
+    @GetMapping(path = GET_WALLET_BY_PUBLIC_KEY)
     public Wallet getWalletByPublicKey(@PathVariable String publicKey){
         return walletService.getWalletByPublicKey(publicKey);
     }
 
-    @GetMapping(value = "wallets/publicKeys")
-    public Collection<String> getAllPublicKeys(){
-        return walletService.getAllPublicKeys();
-    }
+//    @GetMapping(path = GET_ALL_WALLET_PUBLIC_KEYS)
+//    public Collection<Object[]> getAllPublicKeys(){
+//        return walletService.getAllPublicKeys();
+//    }
 
 }

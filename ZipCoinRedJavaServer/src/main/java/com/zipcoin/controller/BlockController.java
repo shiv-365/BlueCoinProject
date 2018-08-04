@@ -1,50 +1,38 @@
 package com.zipcoin.controller;
 
 import com.zipcoin.model.Block;
-import com.zipcoin.utilities.Miner;
-import org.springframework.beans.BeanUtils;
+import com.zipcoin.service.BlockService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.zipcoin.repository.BlockRepository;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.Collection;
+
+import static com.zipcoin.config.BlockApis.BASE_BLOCK_URL;
+import static com.zipcoin.config.BlockApis.GET_MINED_BLOCK_BY_ID;
 
 @RestController
-@RequestMapping("api/v1/")
 @CrossOrigin(origins = {"http://localhost:8100"})
 public class BlockController {
 
+    private BlockService blockService;
+
     @Autowired
-    private BlockRepository blockRepository;
-
-    @RequestMapping(value = "blocks", method = RequestMethod.POST)
-    public Block create(@RequestBody Block block){
-        return blockRepository.saveAndFlush(block);
+    public BlockController(BlockService blockService){
+        this.blockService = blockService;
     }
 
-    @RequestMapping(value = "blocks/{id}", method = RequestMethod.GET)
-    public Optional<Block> get(@PathVariable Long id){
-        return blockRepository.findById(id);
+    @PostMapping(path = BASE_BLOCK_URL)
+    public Block createBlock(@RequestBody Block block){
+        return blockService.createBlock(block);
     }
 
-    @RequestMapping(value = "blocks", method = RequestMethod.GET)
-    public List<Block> get(){
-        return blockRepository.findAll();
+    @GetMapping(path = BASE_BLOCK_URL)
+    public Collection<Block> getAllBlocks(){
+        return blockService.getAllBlocks();
     }
 
-    @RequestMapping(value = "blocks/{id}", method = RequestMethod.DELETE)
-    public Block delete(@PathVariable Long id){
-        Block blockToDelete = blockRepository.findOne(id);
-        blockRepository.delete(blockToDelete);
-        return blockToDelete;
-    }
-
-    @RequestMapping(value = "blocks/{id}/mine", method = RequestMethod.GET)
-    public Block mine(@PathVariable Long id){
-        Block blockToMine = blockRepository.findOne(id);
-        Miner miner = new Miner();
-        Block minedBlock = miner.mine(blockToMine);
-        return blockRepository.saveAndFlush(minedBlock);
+    @GetMapping(path = GET_MINED_BLOCK_BY_ID)
+    public Block getMinedBlockById(@PathVariable Long id){
+        return blockService.getMinedBlockById(id);
     }
 }

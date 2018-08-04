@@ -10,5 +10,7 @@ import java.util.List;
 
 public interface WalletRepository extends JpaRepository<Wallet, Long> {
     Wallet findWalletByPublicKey(String publicKey);
-    Collection<String> findAllPublicKeys();
+
+//    @Query(value = "SELECT publicKey FROM Wallet", nativeQuery = true)
+//    Collection<Object[]> findAllPublicKey();
 }
