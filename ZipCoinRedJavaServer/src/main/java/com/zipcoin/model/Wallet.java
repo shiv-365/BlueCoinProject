@@ -12,7 +12,6 @@ import java.util.Random;
 @Entity
 public class Wallet {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
@@ -41,6 +40,12 @@ public class Wallet {
     {
         generateKeyPair();
 
+    }
+    public Wallet(String name,String publickey,double amount)
+    {
+        this.name=name;
+        this.publickey=publickey;
+        this.amount=amount;
     }
 
     public Double getAmount()

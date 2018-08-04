@@ -50,12 +50,12 @@ public class Transaction {
         this.sender = sender;
     }
 
-    public String getReciepient() {
+    public String getRecipient() {
         return recipient;
     }
 
-    public void setReciepient(String reciepient) {
-        this.recipient = reciepient;
+    public void setRecipient(String recipient) {
+        this.recipient = recipient;
     }
 
     public float getAmount() { return amount; }
@@ -66,11 +66,11 @@ public class Transaction {
 
     public void setCoins(List<Integer> coins) { this.coins = coins; }*/
 
-    private String calulateHash() {
+    private String calculateHash() {
 
         return DigestUtils.sha256Hex(
                 sender +
-                        (recipient) +
+                        recipient +
 
                         Float.toString(amount)
         );
@@ -85,4 +85,5 @@ public class Transaction {
     // String data = StringUtil.getStringFromKey(sender) + StringUtil.getStringFromKey(reciepient) + Float.toString(value)    ;
     // return StringUtil.verifyECDSASig(sender, data, this.signature);
     //}
+
 }
