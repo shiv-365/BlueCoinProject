@@ -11,7 +11,7 @@ export class HomePage {
   
   constructor(public navCtrl: NavController, public blockService: BlockService) {
       this.getAllBlocks();
-    }
+  }
 
   getBlock(id) {
     this.blockService.getBlock(id).subscribe(block => {
@@ -26,7 +26,7 @@ export class HomePage {
   getMinedBlock(id) {
     this.blockService.getMinedBlock(id).subscribe(minedBlock => {
       this.block = minedBlock;
-  })
+    })
   }
 }
 
