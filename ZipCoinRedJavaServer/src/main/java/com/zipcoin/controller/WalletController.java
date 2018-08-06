@@ -1,51 +1,45 @@
 package com.zipcoin.controller;
 
 import com.zipcoin.model.Wallet;
-import com.zipcoin.repository.WalletRepository;
+import com.zipcoin.service.WalletService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.Collection;
+
+import static com.zipcoin.config.WalletApis.BASE_WALLET_URL;
+import static com.zipcoin.config.WalletApis.GET_ALL_WALLET_PUBLIC_KEYS;
+import static com.zipcoin.config.WalletApis.GET_WALLET_BY_PUBLIC_KEY;
 
 @RestController
-@RequestMapping("api/v1/")
 @CrossOrigin(origins = {"http://localhost:8100"})
 public class WalletController {
 
+    private WalletService walletService;
+
     @Autowired
-    private WalletRepository walletRepository;
-
-    //CREATE A WALLET
-    @RequestMapping(value = "wallets", method = RequestMethod.POST)
-    public Wallet create(@RequestBody Wallet wallet){
-        return walletRepository.save(wallet);
+    public WalletController(WalletService walletService){
+        this.walletService = walletService;
     }
 
-    @RequestMapping(value = "wallets", method = RequestMethod.GET)
-    public ResponseEntity<Iterable<Wallet>> index() {
-        return new ResponseEntity<Iterable<Wallet>>(walletRepository.findAll(), HttpStatus.OK);
+    @PostMapping(path = BASE_WALLET_URL)
+    public Wallet createWallet(@RequestBody Wallet wallet){
+        return walletService.createWallet(wallet);
     }
 
-//    //READ A WALLET FROM PUBLIC KEY
-//    @RequestMapping(value = "wallets/{publicKey}", method = RequestMethod.GET)
-//    public Wallet get(@PathVariable String publicKey){
-//        return walletRepository.findWalletFromPubKey(publicKey);
+    @GetMapping(path = BASE_WALLET_URL)
+    public Collection<Wallet> getAllWallets() {
+        return walletService.getAllWallets();
+    }
+
+    @GetMapping(path = GET_WALLET_BY_PUBLIC_KEY)
+    public Wallet getWalletByPublicKey(@PathVariable String publicKey){
+        return walletService.getWalletByPublicKey(publicKey);
+    }
+
+//    @GetMapping(path = GET_ALL_WALLET_PUBLIC_KEYS)
+//    public Collection<Object[]> getAllPublicKeys(){
+//        return walletService.getAllPublicKeys();
 //    }
-//
-//    //READ PUBLIC KEYS FROM ALL WALLETS
-//    @RequestMapping(value = "wallets/publicKeys", method = RequestMethod.GET)
-//    public List<String> get(){
-//        return walletRepository.findAllPublicKeys();
-//    }
-
-    //DELETE A WALLET
-    @RequestMapping(value = "wallets/{id}", method = RequestMethod.DELETE)
-    public Wallet delete(@PathVariable Long id){
-        Wallet walletToDelete = walletRepository.findOne(id);
-        walletRepository.delete(walletToDelete);
-        return walletToDelete;
-    }
 
 }

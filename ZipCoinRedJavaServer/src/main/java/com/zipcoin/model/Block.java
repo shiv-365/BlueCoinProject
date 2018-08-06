@@ -1,10 +1,13 @@
 package com.zipcoin.model;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import javax.persistence.*;
 
 @Entity
+@Getter @Setter
 public class Block {
 
     @Id
@@ -40,44 +43,8 @@ public class Block {
         nonce=0;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setBlockNumber(Integer blockNumber) {
-        this.blockNumber = blockNumber;
-    }
-
-    public Integer getBlockNumber() {
-        return blockNumber;
-    }
-
-    public void setPreviousHash(String previousHash) {
-        this.previousHash = previousHash;
-    }
-
-    public String getPreviousHash() {
-        return previousHash;
-    }
-
-    public void setNonce(Integer nonce) {
-        this.nonce = nonce;
-    }
-
     public void iterateNonce() {
         this.nonce ++;
-    }
-
-    public Integer getNonce() {
-        return nonce;
-    }
-
-    public void setCurrentHash(String currentHash) {
-        this.currentHash = currentHash;
     }
 
     public String getCurrentHash() {
@@ -90,14 +57,6 @@ public class Block {
 //        String text = (blockNumber.toString() + nonce.toString() + transactionListString + previousHash);
         String text = (blockNumber.toString() + nonce.toString() + transactionList + previousHash);
         currentHash = DigestUtils.sha256Hex(text).toUpperCase();
-    }
-
-    public String getTransactionList() {
-        return transactionList;
-    }
-
-    public void setTransactionList(String transactionList) {
-        this.transactionList = transactionList;
     }
 
     public void addTransaction(String transaction){

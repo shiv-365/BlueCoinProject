@@ -5,14 +5,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+import java.util.Collection;
 import java.util.List;
 
 public interface WalletRepository extends JpaRepository<Wallet, Long> {
+    Wallet findWalletByPublicKey(String publicKey);
 
-//    @Query("SELECT w FROM wallet w WHERE w.publicKey = :publicKey")
-//    Wallet findWalletFromPubKey(@Param("publicKey") String publicKey);
-//
-//    @Query("SELECT w.publicKey FROM wallet")
-//    List<String> findAllPublicKeys();
-
+//    @Query(value = "SELECT publicKey FROM Wallet", nativeQuery = true)
+//    Collection<Object[]> findAllPublicKey();
 }

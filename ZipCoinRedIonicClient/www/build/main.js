@@ -142,10 +142,10 @@ var TransactionPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-transaction',template:/*ion-inline-start:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/transaction/transaction.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Transaction</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<ion-content padding>\n\n    <ion-list>\n        <ion-item-sliding *ngFor="let transaction of transactions">\n          <ion-item>\n            <ion-card>\n                <ion-card-header>\n                  Transaction #: {{transaction.transactionId}}\n                </ion-card-header>\n                <ion-card-content>\n                  <div>Sender: {{ transaction.sender }}</div>\n                  <div>Recipient: {{ transaction.recipient }}</div>\n                  <div>Amount: {{ transaction.amount }}</div>\n                </ion-card-content>\n            </ion-card>\n          </ion-item>\n        </ion-item-sliding>\n      </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/khalils/ZipCoin-RED/ZipCoinRedIonicClient/src/pages/transaction/transaction.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_transaction_service__["a" /* TransactionService */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_transaction_service__["a" /* TransactionService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_transaction_service__["a" /* TransactionService */]) === "function" && _c || Object])
     ], TransactionPage);
     return TransactionPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=transaction.js.map

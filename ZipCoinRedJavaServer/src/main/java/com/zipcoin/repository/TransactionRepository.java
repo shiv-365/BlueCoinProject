@@ -9,15 +9,12 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collection;
 import java.util.List;
 
 
 
 @Repository
-//@RepositoryRestResource(collectionResourceRel = "transactions", path = "transactions")
-public interface TransactionRepository extends CrudRepository<Transaction, Long> {
-
-//    @Query("SELECT t FROM transaction t WHERE t.sender = :publicKey OR t.recipient = :publicKey")
-//    List<Transaction> findAllTransactionsWithPubKey(@Param("publicKey") String publicKey);
-
+public interface TransactionRepository extends JpaRepository<Transaction, Long> {
+    Collection<Transaction> findTransactionBySenderOrRecipient(String sender, String recipient);
 }

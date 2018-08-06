@@ -1,6 +1,8 @@
 package com.zipcoin.model;
 
 import com.zipcoin.utilities.StringUtil;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,62 +12,30 @@ import java.security.*;
 import java.util.Random;
 
 @Entity
+@Getter @Setter
 public class Wallet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPublickey() {
-        return publickey;
-    }
-
-    public void setPublickey(String publickey) {
-        this.publickey = publickey;
-    }
-
     private String name;
-    private String publickey;
+    private String publicKey;
     private Double amount;
 
-    public Wallet()
-    {
+    public Wallet() {
         generateKeyPair();
-
     }
-    public Wallet(String name,String publickey,double amount)
-    {
+
+    public Wallet(String name, String publicKey, double amount) {
         this.name=name;
-        this.publickey=publickey;
+        this.publicKey=publicKey;
         this.amount=amount;
     }
 
-    public Double getAmount()
-    {
-        return amount;
-    }
-
-    public void setAmount(Double amount)
-    {
-        this.amount = amount;
-    }
-
-
-    public String getPublicKey()
-    {
-        return publickey;
-    }
-
-
     public void generateKeyPair() {
+        Random random =new SecureRandom();
+        Integer random10digit= random.nextInt(10);
+        publicKey=random10digit.toString();
 //        try {
 //
 //            KeyPairGenerator keyGen = KeyPairGenerator.getInstance( "DSA","SUN");
@@ -84,9 +54,6 @@ public class Wallet {
 //        } catch (Exception e) {
 //            throw new RuntimeException(e);
 //        }
-        Random random =new SecureRandom();
-        Integer random10digit= random.nextInt(10);
-        publickey=random10digit.toString();
     }
 
 }
