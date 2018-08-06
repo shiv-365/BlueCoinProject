@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
 import { TransactionService } from '../../providers/transaction-service';
 
 /**
@@ -16,15 +15,12 @@ import { TransactionService } from '../../providers/transaction-service';
   templateUrl: 'transaction.html',
 })
 export class TransactionPage {
-  private block : any = {};
-  private blocks : Array<any>;
-
+  
   private transactions : Array<any>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
   public transactionService: TransactionService){
     this.getAllTransactions();
-
   }
 
   ionViewDidLoad() {
