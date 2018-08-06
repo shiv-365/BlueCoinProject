@@ -105,8 +105,8 @@
       <file leaf-file-name="WalletService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/service/WalletService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" selection-start-line="31" selection-start-column="2" selection-end-line="33" selection-end-column="7" />
+            <state relative-caret-position="495">
+              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -379,12 +379,12 @@
       <option name="presentableId" value="Default" />
       <updated>1533221514750</updated>
       <workItem from="1533221516219" duration="17000" />
-      <workItem from="1533244438155" duration="11004000" />
+      <workItem from="1533244438155" duration="11256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14118000" />
+    <option name="totallyTimeSpent" value="14370000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -417,7 +417,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32954547" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5834483" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28413793" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.0" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
@@ -691,8 +691,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcoin/service/WalletService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-start-column="2" selection-end-line="33" selection-end-column="7" />
+        <state relative-caret-position="495">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
