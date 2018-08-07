@@ -20,11 +20,11 @@ public class TransactionLoader implements ApplicationRunner {
   @Override
   public void run(ApplicationArguments applicationArguments){
       Transaction[] transactions = new Transaction[]{
-              new Transaction("shivam", "khalil", 10),
-              new Transaction("eric", "shivam", 100),
-              new Transaction("khalil", "eric", (float)30.22),
-              new Transaction("aleena", "navya", (float)43.32),
-              new Transaction("shivam", "ken", 1)
+              new Transaction("shivam", "khalil", (double) 10f),
+              new Transaction("eric", "shivam", (double) 100.34f),
+              new Transaction("khalil", "eric", (double) 30.000),
+              new Transaction("aleena", "navya", (double) 43.32),
+              new Transaction("shivam", "ken", (double) 1f)
       };
 
       for(Transaction t : transactions){

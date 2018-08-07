@@ -16,5 +16,5 @@ import java.util.List;
 
 @Repository
 public interface TransactionRepository extends JpaRepository<Transaction, Long> {
-    Collection<Transaction> findTransactionBySenderOrRecipient(String sender, String recipient);
+    Collection<Transaction> findTransactionBySenderPublicKeyOrRecipientPublicKey(String senderPublicKey, String recipientPublicKey);
 }

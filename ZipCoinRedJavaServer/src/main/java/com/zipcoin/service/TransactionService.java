@@ -33,7 +33,6 @@ public class TransactionService {
 
         transaction.calculateAndSetHash();
         return transactionRepository.save(transaction);
-
     }
 
     public Collection<Transaction> getAllTransactions(){
@@ -41,7 +40,7 @@ public class TransactionService {
     }
 
     public Collection<Transaction> getTransactionsByPublicKey(String publicKey) {
-        return transactionRepository.findTransactionBySenderOrRecipient(publicKey, publicKey);
+        return transactionRepository.findTransactionBySenderPublicKeyOrRecipientPublicKey(publicKey, publicKey);
     }
 
 

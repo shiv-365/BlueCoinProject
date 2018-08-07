@@ -20,13 +20,13 @@ public class Wallet {
     private int id;
     private String name;
     private String publicKey;
-    private Float amount;
+    private Double amount;
 
     public Wallet() {
         generateKeyPair();
     }
 
-    public Wallet(String name, String publicKey, Float amount) {
+    public Wallet(String name, String publicKey, Double amount) {
         this.name=name;
         this.publicKey=publicKey;
         this.amount=amount;
@@ -36,11 +36,11 @@ public class Wallet {
         return publicKey;
     }
 
-    public Float getAmount(){
+    public Double getAmount(){
         return amount;
     }
 
-    public void setAmount(Float amount){
+    public void setAmount(Double amount){
         this.amount = amount;
     }
 

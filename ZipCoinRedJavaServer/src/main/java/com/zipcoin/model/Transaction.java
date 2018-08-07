@@ -12,16 +12,23 @@ public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    // private String transactionId;
+    private Long transactionId;
     private String senderPublicKey;
     private String recipientPublicKey;
     private String transactionHash;
-    private Float amount;
+    private Double amount;
     //@OneToMany
     //private List<Integer> coins;
     //public Signature signature;
 
-    public Transaction(String senderPublicKey, String recipientPublicKey, Float amount){
+    public Transaction(){
+
+    }
+
+    public Transaction(String senderPublicKey, String recipientPublicKey, Double amount){
+        this.senderPublicKey = senderPublicKey;
+        this.recipientPublicKey = recipientPublicKey;
+        this.amount = amount;
 
     }
 
@@ -33,30 +40,18 @@ public class Transaction {
         return recipientPublicKey;
     }
 
-    public Float getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
-
-
     public void calculateAndSetHash() {
-        String transactionHash = DigestUtils.sha256Hex(senderPublicKey + recipientPublicKey + Float.toString(amount));
+        String transactionHash = DigestUtils.sha256Hex(senderPublicKey + recipientPublicKey + Double.toString(amount));
         setTransactionHash(transactionHash);
     }
 
     public void setTransactionHash(String transactionHash) {
         this.transactionHash = transactionHash;
     }
-
-
-//    public Transaction(String from, String to, float amount/*,List<Integer> coins*/) {
-//        this.sender = from;
-//        this.recipient = to;
-//        this.amount = amount;
-//        //this.coins=coins;
-//    }
-
-
 
 //    public void generateSignature(PrivateKey privateKey) throws NoSuchAlgorithmException, InvalidKeyException, NoSuchProviderException {
 //        String data = StringUtil.getStringFromKey(sender) + StringUtil.getStringFromKey(reciepient) + Float.toString(value)    ;
