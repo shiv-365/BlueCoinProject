@@ -13,15 +13,41 @@ public class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     // private String transactionId;
-    private Wallet sender;
-    private Wallet recipient;
-    private int transactionHash;
-    //    private String sender;
-//    private String recipient;
+    private String senderPublicKey;
+    private String recipientPublicKey;
+    private String transactionHash;
     private Float amount;
     //@OneToMany
     //private List<Integer> coins;
     //public Signature signature;
+
+    public Transaction(String senderPublicKey, String recipientPublicKey, Float amount){
+
+    }
+
+    public String getSenderPublicKey() {
+        return senderPublicKey;
+    }
+
+    public String getRecipientPublicKey() {
+        return recipientPublicKey;
+    }
+
+    public Float getAmount() {
+        return amount;
+    }
+
+
+
+    public void calculateAndSetHash() {
+        String transactionHash = DigestUtils.sha256Hex(senderPublicKey + recipientPublicKey + Float.toString(amount));
+        setTransactionHash(transactionHash);
+    }
+
+    public void setTransactionHash(String transactionHash) {
+        this.transactionHash = transactionHash;
+    }
+
 
 //    public Transaction(String from, String to, float amount/*,List<Integer> coins*/) {
 //        this.sender = from;
@@ -30,64 +56,7 @@ public class Transaction {
 //        //this.coins=coins;
 //    }
 
-    public Transaction(){
 
-    }
-
-    public Transaction(Wallet sender, Wallet recipient, Float amount){
-        this.sender = sender;
-        this.recipient = recipient;
-        this.amount = amount;
-        this.transactionHash = (sender.toString() + recipient.toString() + amount.toString()).hashCode();
-
-    }
-
-    public void transact(Wallet sender, Wallet recipient, Float amount){
-        new Transaction(sender, recipient, amount);
-
-        sender.setAmount(sender.getAmount() - amount);
-        recipient.setAmount(recipient.getAmount() + amount);
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//    private String calculateHash() {
-//        return DigestUtils.sha256Hex(sender + recipient + Float.toString(amount));
-//    }
-
-    //Above commented out by Ken
 
 //    public void generateSignature(PrivateKey privateKey) throws NoSuchAlgorithmException, InvalidKeyException, NoSuchProviderException {
 //        String data = StringUtil.getStringFromKey(sender) + StringUtil.getStringFromKey(reciepient) + Float.toString(value)    ;
