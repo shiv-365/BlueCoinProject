@@ -32,7 +32,7 @@ public class BlockService {
         if (blockToMine.isPresent()) {
             Miner miner = new Miner();
             Block minedBlock = miner.mine(blockToMine.get());
-            return blockRepository.saveAndFlush(minedBlock);
+            return blockRepository.save(minedBlock);
         } else {
             return null;
         }
