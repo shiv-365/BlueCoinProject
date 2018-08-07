@@ -32,6 +32,18 @@ public class Wallet {
         this.amount=amount;
     }
 
+    public String getPublicKey(){
+        return publicKey;
+    }
+
+    public Double getAmount(){
+        return amount;
+    }
+
+    public void setAmount(Double x){
+        amount = amount + x;
+    }
+
     public void generateKeyPair() {
         Random random =new SecureRandom();
         Integer random10digit= random.nextInt(10);
