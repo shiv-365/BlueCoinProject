@@ -15,7 +15,6 @@ import { TransactionService } from '../../providers/transaction-service';
   templateUrl: 'transaction.html',
 })
 export class TransactionPage {
-
   private transactions : Array<any>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
