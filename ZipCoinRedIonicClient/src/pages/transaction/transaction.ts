@@ -31,5 +31,5 @@ export class TransactionPage {
       this.transactions = transactions;
     })
   }
-
+  
 }
