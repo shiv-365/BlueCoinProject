@@ -11,35 +11,38 @@
 
   <ion-item>
     <ion-label>Name</ion-label>
-    <ion-select [(ngModel)]="trans.fromId">
-      <ion-option *ngFor="let wallet of wallets" value={{wallet.publicKey}}>{{wallet.publicKey}}</ion-option>
+    <ion-select [(ngModel)]="transaction.senderPublicKey">
+      <!-- <ion-option *ngFor="let wallet of wallets" value={{wallet.publicKey}}>{{wallet.publicKey}}</ion-option> -->
+      <ion-option>34</ion-option>
+      <ion-option>3564</ion-option>
     </ion-select>
+  </ion-item>
+
+  <!-- <ion-item>
+    <ion-label>{{wallet.publicKey}}</ion-label>
+    <ion-input></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label>{{wallet.amount}}</ion-label>
     <ion-input></ion-input>
-  </ion-item>
+  </ion-item> -->
       
-  <ion-item>
-    <ion-label>{{wallet.publicKey}}</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-
   <div class = "bar bar-subheader bar-assertive">
     <h2 class = "title">Payment</h2>
   </div>
 
   <ion-item>
     <ion-label>To</ion-label>
-    <ion-select [(ngModel)]="trans.toId">
+    <ion-input [(ngModel)]="transaction.recipientPublicKey"></ion-input>
+    <!-- <ion-select>
         <ion-option *ngFor="let wallet of wallets" value={{wallet.publicKey}}>{{wallet.publicKey}}</ion-option>
-    </ion-select>
+    </ion-select> -->
   </ion-item>
       
   <ion-item>
     <ion-label>Amount</ion-label>
-    <ion-input type="number" placeholder ="enter an amount" [(ngModel)]="trans.amount"></ion-input>
+    <ion-input type="number" placeholder ="enter an amount" [(ngModel)]="transaction.amount"></ion-input>
   </ion-item>
   
   <button ion-button (click)="createTransaction()" (click)="ionViewDidLoad()">Pay</button>
