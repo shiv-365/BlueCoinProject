@@ -11,7 +11,6 @@ import { HomePage } from '../pages/home/home';
 import { WalletPage } from '../pages/wallet/wallet';
 import { TransactionPage } from '../pages/transaction/transaction';
 import { TabsPage } from '../pages/tabs/tabs';
-import { Tab4Page } from '../pages/tab4/tab4';
 import { TransactionService } from '../providers/transaction-service';
 
 @NgModule({
@@ -20,7 +19,6 @@ import { TransactionService } from '../providers/transaction-service';
     HomePage,
     WalletPage,
     TransactionPage,
-    Tab4Page,
     TabsPage
   ],
   imports: [
@@ -34,7 +32,6 @@ import { TransactionService } from '../providers/transaction-service';
     HomePage,
     WalletPage,
     TransactionPage,
-    Tab4Page,
     TabsPage
   ],
   providers: [
